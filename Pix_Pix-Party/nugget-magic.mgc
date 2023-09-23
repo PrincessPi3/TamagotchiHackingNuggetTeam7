@@ -1,0 +1,3 @@
+0   string  \x04\x22\x4D\x18 LZ4 magic bytes header
+>8      lelong    <1       {invalid} # Firmware size shouldn't be 1 bytes or less
+>8      short         =144     {invalid} #afer magic bytes, skip next 144 bytes

@@ -1,0 +1,225 @@
+Pix self reports Sonix SNC7320A as microcontroller
+Dual 32-bit ARM Cortex-M3 @ up to 198mhz
+    12 cycle division
+    single cycle multiply
+    Registers seem to be mostly between addresses 0xE.. and 0xE00F.. 
+
+Flash chip seems to be W25Q64 (64Mbit)
+    Uses SPI for flash (fond reference to TEST_SPI_FLASH in strings)                                                                             
+    64Kbyte Blocks
+    4Kbyte sectors
+    Testing if the padding is related to block/sector size.
+    blocks 0-127 64Kbit blocks
+    8MB is megaBYTE and 64Mbit is megaBIT, so divide megaBIT/16 to get megaBYTES
+    Flash starts at position 000000h and ends at position 7FFFFFh //verify
+    Possible: sectors padded at end with 00 while blocks are padded at end with FF
+    1byte to 256byte programmable pages
+Picture Processing Unit (PPU):
+    TFT/8080
+    UP TO 640 x 480 (VGA)
+    Palette RAM: 1 KB for Text 1, 1 KB for Text 2, and 8 KB for sprites
+    TFT Display:
+        128x128px
+    TFT-LCD/8080 interface
+    Color Mode: RGB565  // possibly
+    Colors: 8(?)/65K/262K 
+    Serial and paralell RGB modes (UPS051/UPS052)
+    Color seems to be 16-bit, so (dec)0-255 or (hex)00-FF
+    Found TFT_DMA mode in strings
+    Interface: 8080 8-bit Parallel , 3/4-Wire S
+    Possible 8-bits, 9-bits, 16-bits, 18-bits interface
+    6-bits, 16-bits, 18-bits SPI interface/8080
+    3-line / 4-line serial interface (SPI)
+        65k colors, RGB 5,6,5 bits
+        262k colors, RGG, 6,6,6 bits
+    Sprite (SPI)
+        – 4/16/256 colors
+        - Size (H&V): 8/16/32/64/128/256 pixels
+        – Each sprite consists of one character
+        – Locatable anywhere on the screen
+        – Up to 63 sprites (8 x 8 pixels) per line 
+        - Sprite RAM: 2 KB
+    Processor supports Jpeg as JFIF - maybe used for the camera? //test
+        - YCbCr422 and 420 jpeg formats
+    Color Space Converter (CSC)
+        - Converts 565 to YCbCr422 and 420 jpeg formats
+--
+    CMOS Image Sensor (CIS) Interface
+        Supports image resolution in VGA (640 x 480), CIF (352 x 288), QVGA (320 x 240), QCIF (176
+x 144), and QQVGA (160 x 120)
+        Supports image data formats in YUV422 (24-bit) and 8-bit RGB
+
+
+
+"sww " found reeatedly
+
+Veles - visualized but did not parse out anything useful
+Binocole - did not run on my box, idk why, may investigate later
+emeditor - my new favorite hex editor on windows, basic and fast
+binwalk -  yielded a 507.3 kb .sit file as well as two .zlib files - both .zlib files were 8142kb, roughly the size of the flash, and a 3kb file and a 1kb file with no extension.
+quickmbs cmd cli - 
+Ghidra
+-- 
+#attempt 1  //failed
+import as raw bin, default ARMv4
+Seaarch->string - min length:4
+First noticed: "sww " at 0038a578
+many "ssw " after that point close to each other best I can tell
+for more readable stings, see strngs-geater-than-4.csv
+search for memory table, see possible-pointers.csv
+
+#attempt 2
+import as raw bin, ARMv7 little endian, default
+
+
+#CyberChef
+--
+note: go back to decode text
+note: files do not seem to have headers or footers, may need to slice out via delimiter (note: isolate in Ghidra) and manually add headers/footers(?)
+SPet's 1337 method to get individual assets:
+Suggest find files on bin (cyberchef?), seperate lz4s, decompress(?somehow)open in Binoniclee to manually get rough pic
+>Still need to find rgb data and resolution data
+
+#attempt 3
+On Windows 11 (not REMnux in Kasm as other attempts)
+import .bin into ghidra as default, little endian ARMv7
+select all analysis
+
+#attempt to slice DAT_003fb01b at 003fb01b referenced by xref 00300ff8
+size of block: 
+#scalpel (failed)
+#-b generate header/footer db
+#-i input file
+#-o output dir
+#scalpel -b -i BAGEL1DIP8.bin -o nullbytesplitbin
+#nope
+
+#split
+split BAGEL1DIP8.bin
+
+#Take Bytes (CyberChef.REMnux.Kasm)
+Asset possibly from 003fb01b to 003fb11e refernced by DAT_003fb01b referenced byu xref 00300ff8
+subtract ending location from starting location to get len (hex)(003fb11e - 003fb01b = 103)
+HEX = 103
+DEC = 259
+File Result See: Slices/slice-170s259l.bin
+Note: Notation: <original bin name>-<start byes>s-<length bytes>l.bin
+//ending s on start bytes means "start" ending l on length bytes means "length"
+break apart on null bytes idea:
+scalpel -c scalpel-nullbyte-split.conf -o nullbyte-delimited-exports BAGEL1DIP8.bin-170s259l.bin
+yielded 48 small binary files, nothing of significance found there as of yet in ghidra, hex editor, and Binocole
+See Slices/nullbyte-delimited-exports/bin-0-0/*.bin
+Also: Slices/nullbyte-delimited-exports/audit.txt
+zlib-flate -decompress *.bin //yielded nothing
+rename 's/\.bin$/.lz4/' *.bin to bypass extension warning
+lz4 -d -v -q -q --no-frame-crc *.bin lz4-decompressed //failure
+Perhaps split by double null bytes?
+    scalpel-nullbyte-split.conf
+        Modify bin to 
+        bin		n	500000	\x00\x00			\x00\x00
+    (will test)
+
+DAT_*, FUN_*, and LAB_* are addrs and seem to maybe have header and footer sign of 
+Header \x60\x47 (Return call, slice next byte /after/)
+Footer (hex)\x00\x08\x80\x08 // this one seems to change by place in file
+// there seems to be a large amount of \x00 termination
+// does not seem consistant at all, more research required
+
+Import bagel1sop8.bin in Ghidra.windows
+    ARM Cortext v3 32 little endian
+    default analysis options
+    examine bad addrs to sus out the start of flash data
+    005/006/0047
+
+#image asset attempt to slice out via calculated length in Ghidra.Windows
+On file BAGEL1DIP8.bin
+128x128 is (in theory) the resolution of the bitmap, each bute is 16 bit meaning 00-FF (hex) or 0-255 (dec)
+128*12`8 = 16384 16 bit bytes of data
+Uni uses BMP in RGB mode, big endian so could very well be the same
+
+
+Compression:
+lz4
+    04 22 4D 18 the magic numbers then skip ahead three, the next four bytes are the size of the compressed data 
+     using 010 hex editor ( https://www.sweetscape.com/download/010editor/ )
+        and safe with .lz4 extension
+    decompress using 7z-zstd ( https://github.com/mcmilk/7-Zip-zstd )
+
+
+addrf MemManager xrefs:
+Entry Point(*),
+00044304(R),
+FUN_0004f8e2:0004f948(W),
+FUN_000079a4:00007a04(R),
+FUN_00055992:0005599a(W),
+FUN_00055992:0005599c(R),
+FUN_0005b9a4:0005c894(W),
+FUN_0005b9a4:0005cc5e(W)  
+
+
+Animations names at:
+    With code above: AB_00089f12+1
+    Between 00089f4c 0008b278
+PSID_* names between 00089ea0 and 000899b8
+
+DAT_00210000 has 185 xrefs
+DAT_00210001 has 208 xrefs
+
+# Possible binwalk method?
+See: Blag article on advances binwalk/firmware breakin ( https://sergioprado.blog/reverse-engineering-router-firmware-with-binwalk/ )
+See: Official usage guide for binwalk ( https://github.com/ReFirmLabs/binwalk/wiki/Usage )
+Notables:
+ -B, --signature              Scan target file(s) for common file signature
+ -R, --raw=<str>              This allows you to search the specified file(s) for a custom string. The search string can include escaped octal and/or hexadecimal values.
+-r, --rm                      Cleans up zero-size files and files that couldn't be processed by extraction utilities during extraction. Used with --extract or --dd
+ -e, --extract                Automatically extract known file types
+ -J, --save                   Save for raw LZMA plot as a PNG
+ -Z, --lzma                   Scan compression streams
+ -P, --partial                Only search for compression streams using common compression options. Can significantly improve the speed of --lzma scans:
+ -o, --offset=<int>           Start scan at this file offset
+ -l, --length=<int>           Number of bytes to scan
+ -f, --log=<file>             Log results to file
+ -v, --verbose                Enable verbose output
+ -X, --deflate                Identifies probable raw deflate compressed data streams by brute-force. May be combined with --lzma./-Z
+ -O, --base=<int>             Sets the base address for all printed offsets. This value will be added to the raw file offset of all printed results
+ -C, --directory=<str>        Extract files/folders to a custom directory (default: current working directory)
+ -t, --term                   Format output to fit the terminal window
+ -Y --disasm                  //does not seem to work on kali WSL2 binwalkv2.3.2+dcb1403
+    -k, --continue            Instruct --disasm to not stop at the first result
+    -T, --minsn               Set the minimum number of consecutive instructions for a --disasm result to be considered valid. The default is 500 instructions:
+ -A --opcodes                 This instructs binwalk to search the specified file(s) for executable opcodes common to a variety of CPU architectures.
+ -M, --matryoshka             This option will recursively scan extracted files during a --signature scan. Only valid when used with --extract or --dd.
+ -p, --fexclude="<str>"         Do not scan files whose names match the given regex string. Particularly useful when combined with --matryoshka and --extract
+
+binwalk -B -f binwalk-BAGEL1DIP8.bin.logbinwalk.log -r -e -Z -t -X -o 273 -K 8 -C BAGEL1DIP8_extracted_1 BAGEL1DIP8.bin
+eqal to
+binwalk --signature --extract --term --deflate --lzma --partial --rm --log=binwalk-BAGEL-DIP8.bin.log --verbose --directory=BAGEL1DIP8_extracted_1 --matryoshka --opcodes BAGEL1DIP8.bin
+
+faster(?): binwalk -B -e -Z -P -f biwalk-faster-BAGEL1DIP89.log -C BAGEL1DIP8_extracted_1 BAGEL1DIP8.bin
+binwalk -B -f binwalk-magic-bytes.BAGEL1DIP8.log -e -K 8 -R "\x04\x22\x4D\x18" -C BAGEL1DIP8_extracted_2 BAGEL1DIP8.bin
+
+LZ4 compressed
+
+nugget-magic.mgc
+0   string  \x04\x22\x4D\x18 LZ4 magic bytes header
+>8      lelong    <1       {invalid} # Firmware size shouldn't be 1 bytes or less
+>8      short         =144     {invalid}
+
+binwalk -B -Z -P --term --fexclude="LZ4 compressed" --magic=nugget-magic.mgc BAGEL1DIP8.bin
+binwalk -B --term -e -C frikknH.extracted --magic=nugget-magic.mgc -f frikknH.log BAGEL1DIP8.bin\
+
+Data Land
+00000200-000005a5000005a5
+
+DAT_00200000 to
+        /**
+         * FILE LIST
+         * 0: Content Archive
+         * 1-6: String Table per language
+         * 7: Small no. of offsets followed by elements (unknown)
+         * 8: Empty Archive
+         * 9-44: Content Archives
+         * 45: Compressed Image Package
+         */
+
+        

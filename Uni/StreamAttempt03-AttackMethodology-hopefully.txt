@@ -1,0 +1,146 @@
+// on the keeper
+0 have two wifis in monitor mode andf sniffy bluetooth ready
+0.1 One logged into 2.4ghz wifi, one not connected to a wifi (for handshake, probing, etc) and bluetooth (one off pi is fine) in case anything happens to leak out
+ 1 Unboxing Uni
+1.1 physcal analysis // will need calipers for enough precision to check tolerences
+1.1.1 Ensure all three radios are enabled in monitor mode and listening 
+1.1.2 Might have to suss out channel with wifi analyzer app, maybe finna figure a Flame's Uni?
+1.2 plug into usb c
+1.2.1 schiff schnorrffff
+1.2.2 Set up while schniff schnorff
+1.2.3 schniff schnorff an update download and meet and marriaideally
+// on bacxked up nugget // find lpols
+2.0 logic analyzer on any interesting pins, pads or busses during boot for anything useful
+2 Jack into USB-PHY and run enumeration and test for anything useful
+2.1 Serial/JTAG/etcetc all relevant protocols probbed well as raw
+2.1.5 Logic analyzer on every pin/bus I can and try to finna out da decal
+// kali have some usb enum tool?
+2.2 Can add a virtual phy on pins ( see USB-PHY-Diagram.png)
+2.3 OTG/Serial/UART/Download modfe
+2.3 Three UARRT locations possible
+    * USB
+    * U1RXD:GPIO18/U1TXD:GPIO17 (function two, 6.1.1 Page 469)
+    * U0TXD:GPIO43/U0RXD:GPIO4444
+3 Jack into TWAI and attempt a pwn live :3333 //be sure you explore the protocol on esp32-s3-dev-module andf figure out any tooling neededr
+4 Schniff schnorff busses
+5 DOCUMENT
+
+
+
+ 33.4.1 Internal/external PHY selection, Page 1216
+    while both USB-OTG as well as the USB Serial/JTAG >     controller allows serial
+    programming, only USB-OTG supports the DFU protocol an only     the USB Serial/JTAG controller supports JTAG
+    debugging over USB
+
+maybe jack striaght into the USB controller/chip/bus to see if its really disabled or if its just having a power-only usb-c.
+
+
+33.4.2 Runtime operation, page 1217
+    reset into boot loader//no mention on how it interacts with secure boot/asusme will not
+
+
+33.5 Register Summary, page 1219-1232
+    Serial and JTAG registers
+
+    6.10.2 Power Supply Management
+    Each ESP32-S3 pin is connected to one of the three  different power domains.
+    • VDD3P3_RTC: the input power supply for both RTC and CPU
+    • VDD3P3_CPU: the input power supply for CPU
+    • VDD_SPI: configurable input/output power supply
+    VDD_SPI can be configured to use an internal LDO. The LDO   input and output both are 1.8 V. If the LDO is not
+    enabled, VDD_SPI is connected directly to the same power supply as VDD3P3_RTC.
+    The VDD_SPI configuration is determined by the value of     strapping pin GPIO45, or can be overriden by eFuse
+    and/or register settings. See ESP32-S3 Datasheet sections   Power Scheme and Strapping Pins for more
+    details.
+    Note that GPIO33 ~ GPIO37 and GPIO47 ~ GPIO48 can be    owered either by VDD_SPI or VDD3P3_CPU
+
+6.11 Peripheral Signals via GPIO Matrix
+ Raw protocols on da pins \:Data
+6.12 IO MUX Function List, Page 481
+    All (mentioned) protocols on each pin
+    Asbolutely no mention of SWD? (rumor?)
+Serial Interfaces: (3)
+    USB
+    U1RXD:GPIO18/U1TXD:GPIO17 (function two, 6.1.1 Page 469)
+    U0TXD:GPIO43/U0RXD:GPIO44
+SPI exploit :eyess: //internal flash pins not broken out
+7.1.4 Functional Description, Page 514
+    Resets
+
+Chip Boot Control, Page 519\
+9.3.1 Peripheral Interrupt Sources, Page 524-541 (detailed info goes on)
+
+RTC Clocks:
+    RTC slow memory: 8 KB SRAM that works under RTC fast clock (rtc_fast_clk), which can be used as
+    extended memory or to store ULP co-processor directives and data.
+        • RTC fast memory: 8 KB SRAM that works under CPU clock (CPU_CLK), which can be used as extended
+    memory
+
+TWAI (Two Wire Automotive Interface)
+    on RX and TX! //could have been mistaken for SWD, or SWD is an undocumented feature
+    UART Controller 0 (shared by TWAI) memory mapping 0x6000_0000 0x6000_0FFF 4KB
+     
+eFuses: r. If read-protection for some data is not enabled, that data is readable from
+outside the chip. If read-protection is enabled, that data can not be read from outside the chip. // test/glitch/inject?
+
+Boot via pins:
+3v3 to 3v3
+3v3 through a resistor to enable
+(Page 112 esp32-wroom-1u.pdf)
+
+---
+
+USB Interface:
+    Full-Speed (12Mbps) USB 2.0 protocol 
+    33.5 Register Summary table, Page 1219 of the technical manual
+    USB-OTG Download Mode:
+        // Test USB OTG Download mode via hard connection to bus/pins
+        Can be configured to either use internal USB PHY of ESP32-S3 or external PHY via GPIO matrix.
+        ( 33.2 Features, Page 1207 of technical manual )
+        CDC-ACM supports host controllable chip reset and entry into download mode.
+        One internal physical interface for usb shared by both Serial/JTAG and USB-OTG
+            Requires setgting Register USB_SERIAL_JTAG_PHY_SEL to 1(?) ( See Page 1221 )
+        Can add a virtual phy on pins ( see USB-PHY-Diagram.png)
+        33.5 Register Summary 33.5 USB Register Summary ( starting at page 1219 )
+
+34 SD/MMC Host Controller (SDHOST)
+    // can auto-executed code go here?
+    // exxplore if this can uplaod executable code
+    • Two external cards (one rw'd to at a time)
+    • SD Memory Card standard: V3.0 and V3.01
+    • MMC: V4.41, V4.5, and V4.51
+    • CE-ATA: V1.1
+    • 1-bit, 4-bit, and 8-bit modes
+        Commands:
+        • CMD - command
+        • CMDARG - command argument
+        • BYTCNT - byte count
+        • BLKSIZ - block size
+        • CLKDIV - clock divider
+        • CKLENA - clock enable
+        • CLKSRC - clock source
+        • TMOUT - timeout
+        • CTYPE - card type
+    CPU Read/Write:
+    * There are two ways to enable a write operation: DMA and CPU read/write.
+    If SDIO-sending is enabled, data can be written to the TX RAM module by APB interface. Data will be written to
+    register SDHOST_BUFFIFO_REG from the CPU, directly, by an APB interface.
+    * There are two ways to enable a read operation: DMA and CPU read/write.
+    When the data path receives data, the data will be written to the RX RAM. Then, these data can be read with the
+    APB method at the reading end. Register SDHOST_BUFFIFO_REG can be read by the APB directly.
+
+    DMA Protocol (34.7, DMA Descriptor Chain, Page 1239 of the technical guide )
+        34.9.1 DMA Initialization ( Page 1242 of the technical manual )
+        Reister Summary ( 1246 )
+    37.3.2 RAM ( Page 1374 )
+        37.3.2.3 RAM Access:
+        APB bus is able to access RAM in FIFO mode and in NONFIFO (Direct Address) mode, depending on the
+        configuration of RMT_APB_FIFO_MASK:
+        • 1: use NONFIFO mode;
+        • 0: use FIFO mode.
+        Channels 3 and 7 also support DMA access.
+
+Capacitive Touch Pins (see Capacitive-Touch-Pins.png)
+    For voltage glitching, it might be important to hold T0 in place
+
+TWAI errata on page 11, 3.13 esp32_errata

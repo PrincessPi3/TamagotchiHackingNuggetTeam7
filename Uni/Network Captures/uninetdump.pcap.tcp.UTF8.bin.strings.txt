@@ -1,0 +1,116 @@
+do)!
+aJ&w
+apiuni-tmgc.tyb.jp
+Amazon1
+Amazon RSA 2048 M010
+221215000000Z
+240113235959Z0
+apiuni-tmgc.tyb.jp0
+B'p4
+JWm*
+	%|W^
+[W7M
+apiuni-tmgc.tyb.jp0
+40200
+*http://crl.r2m01.amazontrust.com/r2m01.crl0
+i0g0-
+!http://ocsp.r2m01.amazontrust.com06
+*http://crt.r2m01.amazontrust.com/r2m01.cer0
+QHYFq
+1Id^
+?he2
+oqrR'>
+~%K6
+::q1
+Amazon1
+Amazon Root CA 10
+220823222128Z
+300823222128Z0<1
+Amazon1
+Amazon RSA 2048 M010
+BNMX
+o0m0/
+#http://ocsp.rootca1.amazontrust.com0:
+.http://crt.rootca1.amazontrust.com/rootca1.cer0?
+80604
+.http://crl.rootca1.amazontrust.com/rootca1.crl0
+Arizona1
+Scottsdale1%0#
+Starfield Technologies, Inc.1;09
+2Starfield Services Root Certificate Authority - G20
+150525120000Z
+371231010000Z091
+Amazon1
+Amazon Root CA 10
+Pt}n
+0-}-tp5
+q\^i
+L>;$&
+l0j0.
+"http://ocsp.rootg2.amazontrust.com08
+,http://crt.rootg2.amazontrust.com/rootg2.cer0=
+60402
+,http://crl.rootg2.amazontrust.com/rootg2.crl0
+b7B\
+ChlW
+91_|s
+]]7dL~0
+{E)P9
+jG#1/\
+US1%0#
+Starfield Technologies, Inc.1200
+)Starfield Class 2 Certification Authority0
+090902000000Z
+340628173916Z0
+Arizona1
+Scottsdale1%0#
+Starfield Technologies, Inc.1;09
+2Starfield Services Root Certificate Authority - G20
+kv8c
+.j;X
+I|fN
+C0A0
+http://o.ss2.us/0!
+http://x.ss2.us/x.cer0&
+http://s.ss2.us/r.crl0
+Sn>G
+]4(k
+#Sw]
+'xgHS
+D`4Ma
+,":J
+Lq8v
+Shanghai1
+Shanghai1/0-
+&ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.1!0
+Pre-provisioning Modules100.
+!security.pre-module@espressif.com0
+230207043510Z
+380203043510Z0E1
+70041DB7F1A41
+TOKYO1
+BANDAI0
+LAxx
+wB`L
+A0?0
+7=? 
+Z<=1
+CUc ,u
+>7~\
+MLf{
+;s~er
+W29x
+_aqo
+U*[#
+xw&&
+U*t~M
+ S*.
+'^C8
+~G}e
+b:@)L
+[p:3
+~(` 
+sA8?
+@yfb
+J.hXh
+ X/f'GY7Zb

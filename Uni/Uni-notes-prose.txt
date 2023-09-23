@@ -1,0 +1,382 @@
+Primary module is ESP32-S3-WROOM-1-N16 (See Page 2, Section 1.1 (Features) on ( "Data Sheets"/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf )
+
+
+    Voltage: Nominsl 3.3v (limits: 3.0v-3.6v)
+    16 MB Quad SPI flash ( GD25Q128ESIG )
+    512KB SRAM
+    384 KB of ROM (programmed at factory) todo: get dump/code
+        ROM-0: 256KB
+        ROM-1: 128 KB
+        // see table and page 392 of technical manual, some memory addresses map multiple to the same location/data )
+    8MB Octal PSRAM (SPI Octal)
+    ESP32-S3 series of SoCs embedded, Xtensa dual-core 32-bit LX7 microprocessor, up to 240MHz
+        Vector instructions for AI acceleration
+        ISA: Xtensa ISA with PIE (8bit-128bit)
+            Full Instruction Set Reference: ( "Data Sheets"/xtensa-isa.pdf )
+            PIE (Processor Instruction Extensions): Page 37, Section 1  ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+        See Also (for ISA Core) ( "Data Sheets"/Xtensa_lx
+        FFT (Fast Fourier Transform)
+        See ( "Data Sheets"/Xtensa_lx Overview handbook.pdf )
+        See Also (for ISA Core) ( "Data Sheets"/Xtensa_lx Overview handbook.pdf  )
+
+    44 programmable GPIOs
+    USB-OTG
+    Listed protocols: SD/MMC host, SPI, I2C, PWM, UART, RMT, TWAI, ADC, DAC, I2S ( https://www.electronics-lab.com/esp32-s3-dual-core-wifi-and-bluetooth-le-5-soc-adds-ai-features-for-aiot-applications/ )
+    
+    A 16 KB or the total 32 KB of SRAM-0 memory space can be configured as instruction cache (ICache) to store
+instructions or read-only data of the external memory. In this case, the occupied memory space cannot be
+accessed by the CPU, while the remaining can still can be accessed by the CPU.
+
+Memory: (4, Page 389) 
+SP32-S3 can address up to 1 GB external flash and 1
+GB external RAM.
+    – 848 KB of internal memory address space accessed from the instruction bus
+    – 560 KB of internal memory address space accessed from the data bus
+    – 836 KB of peripheral address space    
+    –  32 MB of external memory virtual address space accessed from the instruction bus
+    –  32 MB external memory virtual address space accessed from the data bus
+    – 480 KB of internal DMA address space
+    – 32 MB of external DMA address space
+4.1 All internal memory,
+external memory, and peripherals are located on the CPU buses.
+
+    RISC-V Coprocessor ULP (Ultra Low Power): ULP-­RISC-V
+        Instruction Set: RV32IMC (RISC-V integar, multiplication, compressed instructions)
+        Thirty-two 32-bit general-purpose registers
+        32-bit multiplier and divider
+        Support for interrupts
+        Booted by the CPU, its dedicated timer, or RTC GPIO
+        Can not be used at same time as FSM-ULP
+    FSM-ULP Coprocessor (Finite State Machine Ultra Low Power)
+        Support for common instructions including arithmetic, jump, and program control instructions
+        Support for on-board sensor measurement instructions
+        Booted by the CPU, its dedicated timer, or RTC GPIO
+        Can not be used at same time as ULP-RISC-V
+    ESP32-S3’s internal memory includes:
+        384 KB ROM: for booting and core functions
+        512 KB on-chip SRAM: for data and instructions, running at a configurable frequency of up to 240 MHz
+        RTC FAST memory: 8 KB SRAM that supports read/write/instruction fetch by the main CPU (LX7
+        dual-core processor). It can retain data in Deep-sleep mode
+        RTC SLOW Memory: 8 KB SRAM that supports read/write/instruction fetch by the main CPU (LX7
+        dual-core processor) or coprocessors. It can retain data in Deep-sleep mode
+        4 Kbit eFuse: 1792 bits are reserved for user data, such as encryption key and device ID
+        In-package flash and PSRAM
+    Up to 8 MB PSRAM // unknown how much module has yet, test
+    UART as wake-up source
+    Pripherals
+        3xGPIO, 2x(open)SPI (Single SPI, Dual SPI, Quad SPI, and QPI), LCD interface, Camera interface,
+        3xUART, 2xI2C, 2xI2S, remote control (for IR), 4xpulse counter,
+        LED PWM (8 channels),
+        USB 1.1 OTG,
+        USB 2.0 OTG Full-Speed (host or device),
+        USB Serial/JTAG controller,
+        2xMCPWM (motor control),
+        SDHOST (SD/MMC Controller),
+        GDMA (General Direct Memory Acces),
+            see Page 348, "GDMA Controller (GDMA) in ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )),
+    4.3.3.3 Cache Operations
+        * ESP32-S3 caches support the following operations1. Write­Back: This operation is used to clear the dirty bits in dirty blocks and update the new data to the
+        memory. After the write-back operation finished, both the external memory and the cache are
+     bearing the new data. The CPU can then read/write the data directly from the cache. Only DCache has    this
+         function.
+        I f the data in the cache is newer than the one stored in the external memory, then the new data will be
+         considered as a dirty block. The cache tracks these dirty blocks through their dirty bits. When the dirty bits of a data are cleared, the cache will consider the data as new
+    .
+
+        TWAI® controller (Two Wire Automotive Interfce, compatible with ISO 11898-1), 
+        2 x ADC (12-bit analog to digital converters up to 20 channels),
+        Touch sensing IOs,
+        Temperature sensor,
+        Timers: See Page 636, Section 12 "Timer Group (TIMG)" in ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+        Watchdog timers (WDT): See Page 13 "Watchdog Timers (WDT)" in ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+    40MHz crystal oscilator
+        Clocks: See Page 515, 7.2 "Clock" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+    Registers: see Page 802, Section 17 "System Registers (SYSTEM)" in ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+    Pin Description: See Page 11, Table 3, of ( "Data Sheets"/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf )
+        For deeper detail, See Page 654
+    Table 4­3. Module/Peripheral Address Mapping ( Page 397 of technical manual) 
+    
+    Security Features:
+        External Memory Encryption and Decryption module (XTS-AES)
+        Secure Boot (RSA-PSS signature)
+        HMAC Accelerator
+            HMAC-SHA-256
+        RSA Digital Signatures (DS) with key length up to 4096 bits
+            SHA-256
+        Secure World Controller ("World Controller" in data sheet) (divide hardware into secure vs non-secure areas)
+        SHA Accellerator
+            SHA-1
+            SHA-224
+            SHA-256
+            SHA-384
+            SHA-512
+            SHA-512/224
+            SHA-512/25
+            SHA-512/t
+        Two working modes
+            Typical SHA
+            DMA-SHA
+        AES Accelerator
+        Typical AES working mode
+            AES-128/AES-256 encryption and decryption
+        DMA-AES working mode
+            AES-128/AES-256 encryption and decryption
+            Block cipher mode
+                ECB (Electronic Codebook)
+                CBC (Cipher Block Chaining)
+                OFB (Output Feedback)
+                CTR (Counter)
+                CFB8 (8-bit Cipher Feedback)
+                CFB128 (128-bit Cipher Feedback)
+        Interrupt on completion of computation
+    True RNG (32-bit random numbers, cryptographically secure)
+        See: Page 893, Section 25, "Random Number Generator (RNG)" in ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+Battery: li-ion 3.7v 1.369Wh
+USB-C on left, from behind battery: BOOT, GND, TX, RX
+UART interrupt: UART_RS485_CLASH_INT: Triggered when a collision is detected between the transmitter and the receiver
+in RS485 mode.
+GPIO3 controls the source of JTAG signals during the early boot process
+SPI fundamentals: mosi/miso/clk/cs
+4­line full­duplex 4-line here means: clock line, CS line, and two data lines. The two
+data lines can be used to send or receive data simultaneously
+LCD default interface:
+    LCD interface (8-bit ~16-bit parallel
+    RGB, I8080 and MOTO6800), supporting
+    conversion between RGB565, YUV422,
+    YUV420 and YUV411
+
+Bare Pin UART:
+    49 GPIO43 U0TXD O GPIO43 I/O/T CLK_OUT1 O
+    50 GPIO44 U0RXD I1 GPIO44 I/O/T CLK_OUT2 O
+    Common GND
+
+SPI device flash pins, Single/Dual/Quad SPI/QPI/OPI (octal QPI)
+CLK IO39 32 I/O/T MTCK, GPIO39, CLK_OUT3, SUBSPICS1 //manual prose
+    SPICS0 SPICLK SPID SPIQ SPIHD SPIWP VDD_SPI (Module QSPI Flash, taken from block diagram: Figure 1, Page 9 of ( "Data Sheets"/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf ))
+    Possible raw pin Quad SPI interface to module flash: See Table 2-14, Page 26 of ( "Data Sheets"/esp32-s3_datasheet_en.pdf )
+
+        8 GPIO26 SPICS1 O/T GPIO26 I/O/T
+        30 GPIO27 SPIHD I1/O/T GPIO27 I/O/T
+        31 GPIO28 SPIWP I1/O/T GPIO28 I/O/T
+        32 GPIO29 SPICS0 O/T GPIO29 I/O/T
+        33 GPIO30 SPICLK O/T GPIO30 I/O/T
+        34 GPIO31 SPIQ I1/O/T GPIO31 I/O/T
+        35 GPIO32 SPID I1/O/T GPIO32 I/O/T
+
+Boot Options:
+    Default: SPI Boot
+        Handled by default by built in weak pull-up and pull-down resistors
+            27: GPIO0: 1 (pull up)
+            16: GPIO46: 0 (pull down) 
+    Download Boot
+           27: GPIO0 0 (Pull down)
+           16: GPIO46: 0 (default, pull down)
+
+PORTS:
+    ONLY CONNECT VCC IF THE USB IS UNPLUGGED!!! !IMPORTANT  
+
+JTAG:
+JTAG format ISO 11898-1
+GPIO3 controls the source of JTAG signals during the early boot process
+See: Snips/Periphial-Schematics.png for pinout to JTAG and UART #make sure this is the right JTAG to get flash data #find command protocol/tool to dump flash
+eFsue "CONFIG_SECURE_BOOT_ALLOW_JTAG"
+    > "If not set (default), the bootloader will permanently disable JTAG (across entire chip) on first boot when either secure boot or flash encryption is enabled."
+
+SWD:
+    Said to be enabled on tx/rx pads
+    Reference, scroll to "SWD Usage": https://research.kudelskisecurity.com/2019/05/16/swd-arms-alternative-to-jtag/
+    Data Sheet, protocol and usage: ( "Data Sheets"/SWD-IHI0031.pdf )
+    Infonfo on protocol and methods: https://www.cnblogs.com/shangdawei/p/4748751.html
+    SWO(?): https://wiki.segger.com/SWO
+    ESP-32 SWD Interface: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/index.html
+    SWD ESP-32: Debug Command Line: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/using-debugger.html#jtag-debugging-using-debugger-command-line
+    Tips: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/tips-and-quirks.html#jtag-debugging-tip-debugger-startup-commands
+    Debug via visual studio: https://www.visualmicro.com/page/ESP32-Debugging.aspx
+    Open Sorurce ESP Debugging software: https://github.com/walmis/blackmagic-espidf
+    With Zadig debug https://community.platformio.org/t/debugging-esp32-with-jlink/28577
+    Platform.io // already installed
+    `help` command 
+
+Wifi
+    802.11 b/g/n
+    Bit rate: 802.11n up to 150 Mbit pers second
+    Supports 20KMz and 40MHz bandwidth
+    4x virtual wifi interface
+    Simultaneous Infrastructure BSS Station mode, SoftAP mode, and Station + SoftAP mode
+    Fragmentation and defragmentation
+    Monitor mode //verify, find link ref
+    Arbitrary wifi data send //verify, find link ref
+    TLS1.2
+
+Bluetooth
+    Does not seem connected or enabled at current version
+    Physical capabilities on chip:
+        Bluetooth LE: Bluetooth 5, Bluetooth mesh
+        Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
+        All nominal Bluetooth 5 LE and Bluetooth mesh LE functions See Page 45, Section 3.7 "Bluetooth LE" on ( "Data Sheets"/esp32-s3_datasheet_en.pdf )
+
+Wifi+Bluetooth
+    On-board PCB antenna (ESP32-S3-WROOM-1)
+#idea
+Maybe use standard UART and load into Arduino IDE or esptool to try and download the flash data
+
+Physical Module Info
+14 pins on Left: gnd, 3V3...IO20:14
+15 pins on Right: EPAD, GND...IO0:247
+12 pins on bottom, from Left: IO3:15...IO45:26
+Physical Size: 18.0×25.5×3.1mm
+Center of adjacent pins 1.27mm apart
+
+Screen info:
+    128x128 pixels
+    256 colors
+    16 bit color depth (00-FF aka 0-255)
+    BMP
+    Might use sRGB, rendered in Gimp via the open source Gimp sRGB pallate #research microprocessor
+    72 dpi
+    Compression: 	Bitfields(?)
+    File size of screen shot: 32768bytes
+    LCD interface: #see page 1046, Section 29.1 of ( "Data Seets"/esp32-s3_technical_reference_manual_en.pdf )
+        8-bit ~16-bit parallel RGB, I8080 and MOTO6800
+        conversion between RGB565, YUV422, YUV420 and YUV411
+        <=40MHz
+        LCD data retrieved from internal memory via GDMA (Generic DMA (Direct Memory Access))
+        num_colors: Use BitDepth
+LCD_CAM interface: // see page 1052, Section 29.3.6 of ( "Data Seets"/esp32-s3_technical_reference_manual_en.pdf )
+Conversion between:
+    • BT601 and BT709 standards
+    • RGB565 (full/limited range) and YUV422/420/411 (full/limited range) formats
+    • YUV422/420/411 (full/limited range) formats
+
+Network: see "Network Captures"/uninetdump.pcap.*
+???: a26jky1gs39me-ats.iot.apj-northeast-1.amazonaws.com	TCP	
+DNS: apiuni-tmgc.tyb.jp TCP/port 8883
+Network: see "Network Captures"/
+Offset 5194 (0x144a):
+  File type:   Zlib Deflate
+  Extension:   zlib
+  MIME type:   application/x-deflate
+
+TCP Stream Capture: "Network Captures"/uninetdump.pcap.tcp.UTF8.bin
+
+DNS Records from .pcap:
+A apiuni-tmgc.tyb.jp
+CNAME a26jky1gs39mej-ats.iot.ap-northeast-1.amazonaws.com
+A 52.196.228.160
+A 35.73.76.182
+A 54.178.45.31
+A 52.196.151.124
+A 3.115.144.167
+A 43.207.254.194
+A 35.72.59.166
+A 54.65.66.4
+
+apiuni-tmgc.tyb.jp
+CNAME a26jky1gs39mej-ats.iot.ap-northeast-1.amazonaws.com
+A 35.73.234.2
+A 35.78.56.100
+A 54.95.78.200
+A 35.78.127.182
+A 52.199.19.128
+A 35.76.34.167
+A 35.79.59.252
+A 52.194.44.193
+
+From nmap -p 8883 apiuni-tmgc.tyb.jp
+apiuni-tmgc.tyb.jp (not scanned)
+3.115.144.167
+3.113.70.13
+18.180.70.246
+54.65.66.4
+35.72.59.166
+52.196.151.124
+35.73.68.180
+2400:6700:ff00::2348:3ba6 2400:6700:ff00::12b4:46f6 2400:6700:ff00::373:90a7 2400:6700:ff00::34c4:977c2400:6700:ff00::2bcf:fec2 2400:6700:ff00::3641:4204 2400:6700:ff00::2349:44b4 2400:6700:ff00::371:460d
+rDNS record for 43.207.254.194: ec2-43-207-254-194.ap-northeast-1.compute.amazonaws.com
+
+From zhongtiao:
+#day 1
+What I've found out so far:
+It uses TLS 1.2
+Only 2.4Ghz networks supported
+The first URL it checks is apiuni-tmgc.tyb.jp
+The cloud server is on AWS Northeast-1 in Japan
+The wireless module claims to be made by ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD. so it's an ESP32 MCU
+Doesn't seem to have Bluetooth
+According to the manual, firmware downloads are as large as 9.5mb
+https://apiuni-tmgc.tyb.jp/ jumps to any one of the following IPs (this could of course change with an update):
+35.79.59.252
+52.199.19.128
+35.78.56.100
+54.95.78.200
+18.182.80.137
+52.194.44.193
+35.73.234.2
+18.181.64.19
+It tries to connect to the server 5 times before giving up
+One annoyance is that if you choose "automatic" for the network settings, it's impossible to set the DNS server separately. If you choose manual though, it doesn't allow you to set DHCP for the IP. To get the network dumps so far, I've had to create my own mitm hotspot using wihotspot on Ubuntu. While I've done similar things before, for some reason the Uni gives an error when connecting. Wireshark isn't giving me a whole lot of info as to why though. The server just resets the connection, and then the Uni tries again.
+
+#day 2
+My Uni is currently on firmware 1.0.2.
+The apiuni server also points to 54.250.16.101. When you connect to the apiuni server, it gives a redirect to one of the IPs.
+When you connect to the apiuni server, whichever IP it sends back is locked on until either A) You disconnect, or B) a new DHCP lease is sent. So if you manually set the IP, never let it go to sleep, and never leave the range of your router, it will always connect to the exact same server.
+A new DHCP lease is requested each time the Uni wakes from sleep.
+When checking for updates, the Uni loves exchanging certificates. After every three or four transmissions of application data, it verifies the server certificate. It makes me wonder if there's no checks done by the Uni itself on whether a firmware image is valid.
+The server certs are generated by AWS, not Bandai specific. However, The ESP32 module declares itself as belonging to Bandai when it first connects.
+When you download items, all it's doing is downloading from an AWS S3 bucket (after exchanging a server cert twice). Presumably it is hashing the item code you've given it and identifying that hash with a specific s3 bucket.
+I downloaded the "hip-hop cap" and it looks like it's 2kb in size. No idea yet if every item is exactly 2kb or not
+I explored the "tamaverse" a bit, and most things are closed at the moment. Potentially these open in a software update down the line?
+
+----
+
+ESP-32-S3 errata
+Security 
+    Security features general: https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/security/security.html
+    Security features (kconfig): https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#security-features
+    The options to enable secure boot are provided in the Project Configuration Menu, under “Secure Boot Configuration”
+        enable secure boot in project configuration menu `python3 idf.py menuconfig`
+    Bootloader by default in secure boot is encrypted/decrypted by a hardware decoder before passing off the task of flash encryption to the XTS-AES (if flash crypto is enabled )
+    Mixed into on crypto module(s) hardware? firmware? bootloader?
+    By defaut, JTAG is DISABLED via efuse when flash crypto or secure boot is enabled
+    Flash Encryption: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/security/flash-encryption.html
+    Can not find docs on if http downloads updates into the flash encrypted or not
+    Wifi Security: https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/wifi-security.html
+
+General
+Bootloader:
+    Max size 48 KB (0xC000 bytes)
+    Secure Boot (v2): https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/security/secure-boot-v2.html
+CPU access external (flash or RAM) storage via the cache and uses the MMU
+Module/Peripheral Address Mapping
+    Page 396, 4.3.1 "Module/Peripheral Address Mapping" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+Registers:
+    Page 43, 1.5.1, "Registers" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+    Page 1495, Glossery, "Access Types for Registers" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+eFuse:
+        Page 399-415 Section 5: "eFuse Controller" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+GDMA (General Direct Memory Access) 
+    Page 348-357 Section 3: "GDMA Controller (GDMA)" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+Extended Instruction Set:
+    Page 48, 1.6, "Extended Instruction List" ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+Coprocessors Page 297, Secton 2, "ULP Coprocessor (ULP­FSM, ULP­RISC­V)"
+    ULP-ULP-RISC-V (RISC-V Coprocessor, Ultra Low Power)
+        RV32IMC insturction set
+        Thirty-two 32 bit general registers
+        32-bit multiplier and divider
+        interrupts
+    ULP-FSM (Finite State Machine, Ultra Low Power)
+        Paage 313, 2.6, ULP­RISC­V, ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+        Instructon Set: Page 301-313, 2.5.2, "Instruction Set" Instruction Set ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+
+--
+
+Notes/Help
+    JTAGulator, a hardware tool to find JTAG/SWD/UART by checking up to 24 channels/pins
+    (discontinued //further research for substite/buy used)
+        https://github.com/grandideastudio/jtagulator/wiki
+        http://www.grandideastudio.com/jtagulator/
+
+    ESP-32-S3-2-N16R8B
+        16mb flash
+        8mb PSRAM (SPI RAM)
+            https://thingpulse.com/esp32-how-to-use-psram/

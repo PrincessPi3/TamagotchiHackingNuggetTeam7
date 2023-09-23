@@ -1,0 +1,5307 @@
+Successfully parsed string table! String Count: 866
+
+String [0]:
+CONTINUE
+
+
+String [1]:
+RESET ALL
+
+
+String [2]:
+ENGLISH
+
+
+String [3]:
+FRANÇAIS
+
+
+String [4]:
+DEUTSCH
+
+
+String [5]:
+PORTUGUÊS
+
+
+String [6]:
+ESPAÑOL
+
+
+String [7]:
+ITALIANO
+
+
+String [8]:
+CHECK TO
+MAKE SURE
+THE CLOCK
+HAS THE
+RIGHT TIME!
+
+
+String [9]:
+NICKNAME?
+
+
+String [10]:
+WHEN'S YOUR
+BIRTHDAY?
+
+
+String [11]:
+TAKE A
+PHOTO OF
+YOURSELF!
+
+
+String [12]:
+FAVORITE
+FOOD?
+
+
+String [13]:
+FAVORITE
+TOOL?
+
+
+String [14]:
+FAVORITE
+COLOR?
+
+
+String [15]:
+STORED
+IN THE
+FRIDGE.
+
+
+String [16]:
+STORED
+IN THE
+ITEM BOX.
+
+
+String [17]:
+WAIT UNTIL
+YOUR
+TAMAGOTCHI
+WAKES UP!
+
+
+String [18]:
+EAT THIS?
+
+
+String [19]:
+YES
+
+
+String [20]:
+NO
+
+
+String [21]:
+DELETE
+
+
+String [22]:
+EAT
+
+
+String [23]:
+FRIDGE
+
+
+String [24]:
+STORED
+IN THE
+FRIDGE.
+
+
+String [25]:
+REMOVE
+
+
+String [26]:
+PUT AWAY
+
+
+String [27]:
+PLAY?
+
+
+String [28]:
+YES
+
+
+String [29]:
+NO
+
+
+String [30]:
+DELETE
+
+
+String [31]:
+IS THIS
+OKAY?
+
+
+String [32]:
+YES
+
+
+String [33]:
+NO
+
+
+String [34]:
+NO NEW
+COLORS…
+
+
+String [35]:
+CHANGE
+ROOM?
+
+
+String [36]:
+YES
+
+
+String [37]:
+NO
+
+
+String [38]:
+DELETE
+
+
+String [39]:
+BUY?
+
+
+String [40]:
+YES
+
+
+String [41]:
+NO
+
+
+String [42]:
+IS THIS
+OKAY?
+
+
+String [43]:
+YES
+
+
+String [44]:
+TAKE AGAIN
+
+
+String [45]:
+SAVED!
+
+
+String [46]:
+SAVING
+FAILED…
+
+
+String [47]:
+YOU DON'T
+HAVE ANY
+PHOTOS.
+
+
+String [48]:
+KEEP
+EDITING?
+
+
+String [49]:
+YES
+
+
+String [50]:
+NO
+
+
+String [51]:
+SAVE
+CHANGES?
+
+
+String [52]:
+YES
+
+
+String [53]:
+NO
+
+
+String [54]:
+CAPTION THIS!
+
+
+String [55]:
+IS THIS
+OKAY?
+
+
+String [56]:
+YES
+
+
+String [57]:
+GO BACK
+
+
+String [58]:
+ORDER?
+
+
+String [59]:
+YES
+
+
+String [60]:
+NO
+
+
+String [61]:
+LEAVE WITH
+SITTER?
+
+
+String [62]:
+YES
+
+
+String [63]:
+NO
+
+
+String [64]:
+PICK UP?
+
+
+String [65]:
+YES
+
+
+String [66]:
+NO
+
+
+String [67]:
+YOU CAN'T
+CALL THE
+SITTER
+AGAIN UNTIL
+TOMORROW.
+
+
+String [68]:
+READ
+TAMA CODE?
+
+
+String [69]:
+GO HOME?
+
+
+String [70]:
+YOU WON'T
+GET ANY
+ITEMS IF
+YOU GO
+HOME NOW.
+
+
+String [71]:
+I'M OUT
+
+
+String [72]:
+TAP ALL
+3 BUTTONS
+AT ONCE
+TO FINISH.
+
+
+String [73]:
+UPDATING
+NOTEBOOKS…
+
+
+String [74]:
+IS THIS
+OKAY?
+
+
+String [75]:
+ANYONE
+
+
+String [76]:
+DO NOT
+CHOOSE
+
+
+String [77]:
+MEET UP
+TOMORROW
+
+
+String [78]:
+AT 12 PM
+
+
+String [79]:
+AT 3 PM
+
+
+String [80]:
+AT 5 PM
+
+
+String [81]:
+TO
+
+
+String [82]:
+TOMORROW
+
+
+String [83]:
+PLACE
+
+
+String [84]:
+FROM
+
+
+String [85]:
+TAMAGOTCHI
+
+
+String [86]:
+'S
+
+
+String [87]:
+ROOM
+
+
+String [88]:
+AT 12 PM
+
+
+String [89]:
+AT 3 PM
+
+
+String [90]:
+AT 5 PM
+
+
+String [91]:
+I'M OUT
+
+
+String [92]:
+MET
+
+
+String [93]:
+UNSENT
+
+
+String [94]:
+REMOVE FROM
+FRIENDS?
+
+
+String [95]:
+REMOVE
+
+
+String [96]:
+CANCEL
+
+
+String [97]:
+CHANGE
+GREETING?
+
+
+String [98]:
+YES
+
+
+String [99]:
+NO
+
+
+String [100]:
+CANCEL
+CHANGES?
+
+
+String [101]:
+YES
+
+
+String [102]:
+NO
+
+
+String [103]:
+DELETE?
+
+
+String [104]:
+YES
+
+
+String [105]:
+NO
+
+
+String [106]:
+LINE 1
+
+
+String [107]:
+LINE 2
+
+
+String [108]:
+LINE 3
+
+
+String [109]:
+YOU NEED AT
+LEAST 3
+PHOTOS TO
+MAKE AN
+ALBUM.
+
+
+String [110]:
+MAKE PHOTO
+ALBUM?
+
+
+String [111]:
+YES
+
+
+String [112]:
+NO
+
+
+String [113]:
+ARE YOU
+SURE?
+
+
+String [114]:
+REVIEW
+
+
+String [115]:
+CONFIRM
+
+
+String [116]:
+GO BACK
+
+
+String [117]:
+ARE YOU
+SURE?
+
+
+String [118]:
+REALLY
+SURE?
+
+
+String [119]:
+YES
+
+
+String [120]:
+NO
+
+
+String [121]:
+YOU HAVE
+TOO MANY
+ITEMS.
+REMOVE
+ITEM?
+
+
+String [122]:
+YOU HAVE
+TOO MANY
+FRIENDS.
+REMOVE
+SOMEONE?
+
+
+String [123]:
+YOU HAVE
+TOO MANY
+PHOTOS.
+
+
+String [124]:
+YOU HAVE
+TOO MANY
+PHOTOS!
+
+
+String [125]:
+SORRY.
+
+
+String [126]:
+NOT ENOUGH!
+
+
+String [127]:
+PLEASE WAIT
+
+
+String [128]:
+LOW BATTERY!
+
+
+String [129]:
+LOW BATTERY!
+REPLACE THE
+BATTERIES TO
+USE CAMERA
+
+
+String [130]:
+TRY
+ENTERING IT
+AGAIN.
+
+
+String [131]:
+GIVE THIS?
+
+
+String [132]:
+YES
+
+
+String [133]:
+NO
+
+
+String [134]:
+GO TO THE
+PHONE TO
+CALL AN
+AMBULANCE.
+
+
+String [135]:
+ABCDEF GHIJKL MNOPQR STUVWX YZÀÁÂÃ ÄÆÇÉÈÊ ËÎÏÓÒÔ ÕÖŒÙÚÛ ÜŸÍÌÑ 
+
+
+String [136]:
+–~…,() “”.':! ?&¡¿˙⭕ ❌♥☼★🌀♪ 💢⤴⤵→←₲ % 
+
+
+String [137]:
+😄😣😤😑😵😪 👾📟🎁🍰✨ 
+
+
+String [138]:
+123456 7890 
+
+
+String [139]:
+STATUS
+
+
+String [140]:
+TAMA STATS
+
+
+String [141]:
+PROFILE
+
+
+String [142]:
+FEED
+
+
+String [143]:
+FRIDGE
+
+
+String [144]:
+RESTAURANT
+
+
+String [145]:
+COOK
+
+
+String [146]:
+PLAY
+
+
+String [147]:
+HULA HOOP
+
+
+String [148]:
+MATCHING
+
+
+String [149]:
+BATHROOM
+
+
+String [150]:
+TOILET
+
+
+String [151]:
+BATH
+
+
+String [152]:
+CLEAN
+
+
+String [153]:
+ITEM BOX
+
+
+String [154]:
+ITEMS
+
+
+String [155]:
+ACCESSORY
+
+
+String [156]:
+FURNITURE
+
+
+String [157]:
+DÉCOR
+
+
+String [158]:
+SPECIAL
+
+
+String [159]:
+GO OUT
+
+
+String [160]:
+EXPLORE
+
+
+String [161]:
+TAMA STORE
+
+
+String [162]:
+ARCADE
+
+
+String [163]:
+PARK
+
+
+String [164]:
+PHOTOS
+
+
+String [165]:
+OUTDOOR
+
+
+String [166]:
+STUDIO
+
+
+String [167]:
+CAMERA
+
+
+String [168]:
+TAKE PHOTO
+
+
+String [169]:
+OUTSIDE
+
+
+String [170]:
+INSIDE
+
+
+String [171]:
+ALBUM
+
+
+String [172]:
+PHONE
+
+
+String [173]:
+SOCIAL
+
+
+String [174]:
+UPLOAD
+
+
+String [175]:
+DELETE
+
+
+String [176]:
+FOOD
+
+
+String [177]:
+E-SHOP
+
+
+String [178]:
+AMBULANCE
+
+
+String [179]:
+SITTER
+
+
+String [180]:
+CONNECT
+
+
+String [181]:
+PLAYDATE
+
+
+String [182]:
+VISIT
+
+
+String [183]:
+INVITE
+
+
+String [184]:
+GIFTS
+
+
+String [185]:
+GIVE
+
+
+String [186]:
+RECEIVE
+
+
+String [187]:
+GO OUT
+
+
+String [188]:
+GO HOME
+
+
+String [189]:
+DOWNLOAD
+
+
+String [190]:
+MEET UP
+
+
+String [191]:
+SEND MAIL
+
+
+String [192]:
+GET MAIL
+
+
+String [193]:
+ITEMS
+
+
+String [194]:
+PROFILE
+
+
+String [195]:
+FRIDGE
+
+
+String [196]:
+ACCESSORY
+
+
+String [197]:
+FURNITURE
+
+
+String [198]:
+ITEMS
+
+
+String [199]:
+ROOM
+
+
+String [200]:
+FOOD
+
+
+String [201]:
+SNACKS
+
+
+String [202]:
+COOK
+
+
+String [203]:
+EXPLORE
+
+
+String [204]:
+GO HOME
+
+
+String [205]:
+MEDICINE
+
+
+String [206]:
+NOTEBOOK
+
+
+String [207]:
+MY TAMAS
+
+
+String [208]:
+TAMA LIST
+
+
+String [209]:
+RECIPES
+
+
+String [210]:
+ITEMS
+
+
+String [211]:
+FRIENDS
+
+
+String [212]:
+SETTINGS
+
+
+String [213]:
+TIME
+
+
+String [214]:
+BRIGHTNESS
+
+
+String [215]:
+SOUND
+
+
+String [216]:
+ON
+
+
+String [217]:
+OFF
+
+
+String [218]:
+NORMAL
+
+
+String [219]:
+FRIENDLY
+
+
+String [220]:
+FRIENDS
+
+
+String [221]:
+GOOD BUDDIES
+
+
+String [222]:
+BEST PALS
+
+
+String [223]:
+FOOD
+
+
+String [224]:
+SNACKS
+
+
+String [225]:
+SPECIAL
+
+
+String [226]:
+MORNING
+
+
+String [227]:
+LUNCHTIME
+
+
+String [228]:
+AFTERNOON
+
+
+String [229]:
+DINNERTIME
+
+
+String [230]:
+SUNDAY
+
+
+String [231]:
+DAILY MENU
+
+
+String [232]:
+B-DAY CAKE
+
+
+String [233]:
+PUT LEFT
+
+
+String [234]:
+PUT RIGHT
+
+
+String [235]:
+COLOR
+
+
+String [236]:
+DÉCOR
+
+
+String [237]:
+ROOM
+
+
+String [238]:
+ITEM
+
+
+String [239]:
+SPRING
+
+
+String [240]:
+SUMMER
+
+
+String [241]:
+FALL
+
+
+String [242]:
+WINTER
+
+
+String [243]:
+LEISURE
+
+
+String [244]:
+NATURE
+
+
+String [245]:
+SPORTS
+
+
+String [246]:
+ACCESSORY
+
+
+String [247]:
+PRIZE DRAW
+
+
+String [248]:
+COFFEE CUP
+
+
+String [249]:
+BALLOONS
+
+
+String [250]:
+FRUIT FALL
+
+
+String [251]:
+ROCKET
+
+
+String [252]:
+PING-PONG
+
+
+String [253]:
+FOOTBALL
+
+
+String [254]:
+EDIT
+
+
+String [255]:
+FILTERS
+
+
+String [256]:
+STICKERS
+
+
+String [257]:
+REMOVE
+
+
+String [258]:
+DONE
+
+
+String [259]:
+UPLOAD
+
+
+String [260]:
+DELETE
+
+
+String [261]:
+MET
+
+
+String [262]:
+RAISED
+
+
+String [263]:
+GREETING
+
+
+String [264]:
+REMOVE
+
+
+String [265]:
+EAT THIS?
+
+
+String [266]:
+FREE
+
+
+String [267]:
+SUN
+
+
+String [268]:
+MON
+
+
+String [269]:
+TUE
+
+
+String [270]:
+WED
+
+
+String [271]:
+THU
+
+
+String [272]:
+FRI
+
+
+String [273]:
+SAT
+
+
+String [274]:
+MILK
+
+
+String [275]:
+BAGEL
+
+
+String [276]:
+HAM SANDWICH
+
+
+String [277]:
+FRENCH
+FRIES
+
+
+String [278]:
+PIZZA
+
+
+String [279]:
+CEREAL
+
+
+String [280]:
+PANCAKES
+
+
+String [281]:
+HAMBURGER
+
+
+String [282]:
+FRUIT SALAD
+
+
+String [283]:
+FRIED
+CHICKEN
+
+
+String [284]:
+GRATIN
+
+
+String [285]:
+JUMBO STEAK
+
+
+String [286]:
+PARTY
+PLATTER
+
+
+String [287]:
+POTTAGE
+
+
+String [288]:
+RICE OMELET
+
+
+String [289]:
+PASTA WITH
+SAUCE
+
+
+String [290]:
+UDON NOODLES
+
+
+String [291]:
+SHISH KEBAB
+
+
+String [292]:
+CABBAGE ROLL
+
+
+String [293]:
+VEGETABLE
+CURRY
+
+
+String [294]:
+PROSCIUTTO
+MELON
+
+
+String [295]:
+BLACK BURGER
+
+
+String [296]:
+FLOWER
+BREAD
+
+
+String [297]:
+SQUID INK
+RISOTTO
+
+
+String [298]:
+GYOZA
+DUMPLINGS
+
+
+String [299]:
+RAMEN
+NOODLES
+
+
+String [300]:
+CALIFORNIA
+ROLLS
+
+
+String [301]:
+SUSHI
+
+
+String [302]:
+GARLIC
+SHRIMP
+
+
+String [303]:
+PIZZA TOAST
+
+
+String [304]:
+GREEN THAI
+CURRY
+
+
+String [305]:
+PAD THAI
+
+
+String [306]:
+BORSCHT
+
+
+String [307]:
+GALBI SUSHI
+
+
+String [308]:
+RICE
+CASSEROLE
+
+
+String [309]:
+TOM YUM
+
+
+String [310]:
+CHEESE
+FONDUE
+
+
+String [311]:
+ASTRONAUT
+FOOD
+
+
+String [312]:
+SHRIMP
+COCKTAIL
+
+
+String [313]:
+HOTDOG
+
+
+String [314]:
+TACO
+
+
+String [315]:
+CABBAGE
+SALAD
+
+
+String [316]:
+BURRITO
+
+
+String [317]:
+TEMPURA
+
+
+String [318]:
+SPAGHETTI &
+MEATBALLS
+
+
+String [319]:
+CHICAGO
+STYLE PIZZA
+
+
+String [320]:
+TOWER BURGER
+
+
+String [321]:
+CHICKEN
+WINGS
+
+
+String [322]:
+TAMA POT PIE
+
+
+String [323]:
+MEMETCHI
+OMELET
+
+
+String [324]:
+ROAST TURKEY
+
+
+String [325]:
+PINK CURRY
+
+
+String [326]:
+HEART PIZZA
+
+
+String [327]:
+TAMA RICE
+OMELET
+
+
+String [328]:
+TAMA BURGER
+
+
+String [329]:
+TAMA CURRY
+
+
+String [330]:
+PUMPKIN
+GRATIN
+
+
+String [331]:
+3-COURSE
+MEAL
+
+
+String [332]:
+HORS
+D'OEUVRES
+
+
+String [333]:
+COOKIE
+
+
+String [334]:
+LOLLIPOP
+
+
+String [335]:
+CUPCAKE
+
+
+String [336]:
+POPCORN
+
+
+String [337]:
+SODA POP
+
+
+String [338]:
+SMOOTHIE
+
+
+String [339]:
+HONEY TOAST
+
+
+String [340]:
+DONUTS
+
+
+String [341]:
+STRAWBERRY
+CREPE
+
+
+String [342]:
+DESSERT
+PLATTER
+
+
+String [343]:
+AFTERNOON
+TEA
+
+
+String [344]:
+CELEBRATION
+CAKE
+
+
+String [345]:
+TWIN
+CHERRIES
+
+
+String [346]:
+APPLE
+
+
+String [347]:
+PEACH
+
+
+String [348]:
+BANANAS
+
+
+String [349]:
+MIXED JUICE
+
+
+String [350]:
+GRAPE JUICE
+
+
+String [351]:
+LEMON PIE
+
+
+String [352]:
+MANGO
+PUDDING
+
+
+String [353]:
+MATCHA
+PARFAIT
+
+
+String [354]:
+ICE CREAM
+TUB
+
+
+String [355]:
+FRUIT BOWL
+
+
+String [356]:
+SOFT SERVE
+
+
+String [357]:
+RAINBOW
+SPONGE CAKE
+
+
+String [358]:
+SEA SHAKE
+
+
+String [359]:
+GUMMIES
+
+
+String [360]:
+SPONGE CAKE
+
+
+String [361]:
+FLORAL CAKE
+
+
+String [362]:
+ICE CREAM
+CONE
+
+
+String [363]:
+BLANCMANGE
+
+
+String [364]:
+CANDY APPLE
+
+
+String [365]:
+SPIRAL
+LOLLIPOP
+
+
+String [366]:
+ICE CREAM
+FLOAT
+
+
+String [367]:
+HONEY & ROSE
+TEA
+
+
+String [368]:
+NATA DE COCO
+
+
+String [369]:
+DREAMY
+COTTON CANDY
+
+
+String [370]:
+ACAI BOWL
+
+
+String [371]:
+COCONUT MILK
+
+
+String [372]:
+PINEAPPLE
+JELLO
+
+
+String [373]:
+CHOCOLATE
+CAKE
+
+
+String [374]:
+SHAVED ICE
+
+
+String [375]:
+LEMONADE
+
+
+String [376]:
+HOMEMADE
+COOKIES
+
+
+String [377]:
+CANELE
+
+
+String [378]:
+BERRY
+SMOOTHIE
+
+
+String [379]:
+FRUIT TART
+
+
+String [380]:
+CREAM CAKE
+
+
+String [381]:
+FRIEND
+SHAKES
+
+
+String [382]:
+FRIEND CAKES
+
+
+String [383]:
+FRIEND FISH
+PASTRIES
+
+
+String [384]:
+FRIEND
+COOKIES
+
+
+String [385]:
+B-DAY CAKE
+
+
+String [386]:
+BERRY SUNDAE
+
+
+String [387]:
+FLAN
+
+
+String [388]:
+PEARL
+ICE CREAM
+
+
+String [389]:
+MAMETCHI
+LOLLIPOP
+
+
+String [390]:
+KUCHIPATCHI
+CREPE
+
+
+String [391]:
+TAMA COTTON
+CANDY
+
+
+String [392]:
+HALLOWEEN
+CANDY
+
+
+String [393]:
+GINGERBREAD
+MAN
+
+
+String [394]:
+SANTA CAKE
+
+
+String [395]:
+FESTIVE CAKE
+
+
+String [396]:
+FESTIVE SODA
+
+
+String [397]:
+GINGERBREAD
+HOUSE
+
+
+String [398]:
+HEART
+LOLLIPOPS
+
+
+String [399]:
+BUNNY CAKE
+
+
+String [400]:
+PLUM
+COOKIES
+
+
+String [401]:
+PANCAKES &
+SYRUP
+
+
+String [402]:
+HOT TEA
+
+
+String [403]:
+FLORAL
+PARFAIT
+
+
+String [404]:
+GREEN
+SMOOTHIE
+
+
+String [405]:
+EXOTIC
+SUNDAE
+
+
+String [406]:
+PIANO PIE
+
+
+String [407]:
+PLANET CAKE
+
+
+String [408]:
+RATTLE
+
+
+String [409]:
+BUILDING
+BLOCKS
+
+
+String [410]:
+SCIENCE
+PROJECT
+
+
+String [411]:
+SKETCH BOOK
+
+
+String [412]:
+SKATEBOARD
+
+
+String [413]:
+BADMINTON
+SET
+
+
+String [414]:
+FLUFFY
+CLOUD
+
+
+String [415]:
+VIOLIN
+
+
+String [416]:
+FLOWER SEEDS
+
+
+String [417]:
+SNORKEL SET
+
+
+String [418]:
+STATIONERY
+SET
+
+
+String [419]:
+SNOWMAN
+
+
+String [420]:
+BALL
+
+
+String [421]:
+FRILLY
+PARASOL
+
+
+String [422]:
+BIG SLIDE
+
+
+String [423]:
+PARAGLIDER
+
+
+String [424]:
+ALBUM
+
+
+String [425]:
+SWING
+
+
+String [426]:
+SNOW GLOBE
+
+
+String [427]:
+EASTER EGG
+
+
+String [428]:
+NOTEBOOK
+
+
+String [429]:
+BIKE
+
+
+String [430]:
+CRAYONS
+
+
+String [431]:
+BUTTERFLY
+PIN
+
+
+String [432]:
+RIBBON
+HEADBAND
+
+
+String [433]:
+HANDBASKET
+
+
+String [434]:
+EMBLEM
+
+
+String [435]:
+FRUIT
+BALLOONS
+
+
+String [436]:
+SMALL DRUM
+
+
+String [437]:
+FLOWER CROWN
+
+
+String [438]:
+CLAMSHELL
+HAT
+
+
+String [439]:
+WITCH'S HAT
+
+
+String [440]:
+FLUFFY
+EARMUFFS
+
+
+String [441]:
+BIG BOW
+
+
+String [442]:
+HEART
+SUNGLASSES
+
+
+String [443]:
+TAMA HAT
+
+
+String [444]:
+BADGE
+
+
+String [445]:
+BERRY
+BALLOONS
+
+
+String [446]:
+CROWN
+
+
+String [447]:
+MAGIC HAT
+
+
+String [448]:
+TIARA
+
+
+String [449]:
+MAMETCHI HAT
+
+
+String [450]:
+KUCHIPATCHI
+BAG
+
+
+String [451]:
+MEMETCHI
+BALLOONS
+
+
+String [452]:
+EGGSHELL HAT
+
+
+String [453]:
+TAMA CROWN
+
+
+String [454]:
+CANDY CANE
+
+
+String [455]:
+PARTY HAT
+
+
+String [456]:
+SANTA HAT
+
+
+String [457]:
+REINDEER
+ANTLERS
+
+
+String [458]:
+SANTA'S
+HELPER HAT
+
+
+String [459]:
+BOUQUET
+
+
+String [460]:
+BUNNY EARS
+
+
+String [461]:
+APPLE HAT
+
+
+String [462]:
+CREPE HAT
+
+
+String [463]:
+FLUFFY SCARF
+
+
+String [464]:
+FLOWER
+SUNGLASSES
+
+
+String [465]:
+CAMO HAT
+
+
+String [466]:
+HEAD TOWEL
+
+
+String [467]:
+SUNNY
+SUNGLASSES
+
+
+String [468]:
+SCHOOL BOOKS
+
+
+String [469]:
+ELECTRIC
+GUITAR
+
+
+String [470]:
+STRAWBERRY
+EARRINGS
+
+
+String [471]:
+CONE HAT
+
+
+String [472]:
+SPACE HELMET
+
+
+String [473]:
+ARTIST BERET
+
+
+String [474]:
+EGGSHELL HAT
+
+
+String [475]:
+RAINBOW
+WATERING CAN
+
+
+String [476]:
+DRESSER
+
+
+String [477]:
+SOFA
+
+
+String [478]:
+POTTED PLANT
+
+
+String [479]:
+EASTER
+BASKET
+
+
+String [480]:
+PALM TREE
+
+
+String [481]:
+HALLOWEEN
+SOFA
+
+
+String [482]:
+CHRISTMAS
+TREE
+
+
+String [483]:
+TAMA SOFA
+
+
+String [484]:
+TAMA CABINET
+
+
+String [485]:
+FANCY SOFA
+
+
+String [486]:
+FANCY
+BOOKCASE
+
+
+String [487]:
+COMFY SOFA
+
+
+String [488]:
+GIANT
+PLUSHIE
+
+
+String [489]:
+FLOWER SOFA
+
+
+String [490]:
+FLOWER TABLE
+
+
+String [491]:
+GUMBALLS
+
+
+String [492]:
+CANDY CART
+
+
+String [493]:
+EGG PAINTING
+
+
+String [494]:
+EGG SOFA
+
+
+String [495]:
+HALLOWEEN
+PUMPKIN
+
+
+String [496]:
+TAMA
+BALLOONS
+
+
+String [497]:
+SNOWMAN
+
+
+String [498]:
+SANTA SOFA
+
+
+String [499]:
+HEART PLANT
+
+
+String [500]:
+CREAMY SOFA
+
+
+String [501]:
+FLOWER
+TABLE SET
+
+
+String [502]:
+PIANO
+
+
+String [503]:
+FLAN SOFA
+
+
+String [504]:
+TENT
+
+
+String [505]:
+NORMAL
+
+
+String [506]:
+FLORAL
+
+
+String [507]:
+OCEAN
+
+
+String [508]:
+NATURE
+
+
+String [509]:
+SKY
+
+
+String [510]:
+FANCY
+
+
+String [511]:
+TOY BOX
+
+
+String [512]:
+STREET
+
+
+String [513]:
+BROADWAY
+
+
+String [514]:
+FLUFFY
+
+
+String [515]:
+HALLOWEEN
+
+
+String [516]:
+KING TAMA
+
+
+String [517]:
+FESTIVE
+
+
+String [518]:
+DESSERTS
+
+
+String [519]:
+WINTER
+
+
+String [520]:
+GREEN
+
+
+String [521]:
+TOWEL
+
+
+String [522]:
+VACATION
+
+
+String [523]:
+MOON
+
+
+String [524]:
+ARTSY
+
+
+String [525]:
+MUSEUM
+
+
+String [526]:
+ECO BADGE
+
+
+String [527]:
+ECO BAG
+
+
+String [528]:
+ECO FORK
+
+
+String [529]:
+REMODEL
+COUPON
+
+
+String [530]:
+FASHION
+COUPON
+
+
+String [531]:
+TAMA
+
+
+String [532]:
+TAMA
+
+
+String [533]:
+TAMA
+
+
+String [534]:
+TAMAPATCHI
+
+
+String [535]:
+TAMAPATCHI
+
+
+String [536]:
+TAMAPATCHI
+
+
+String [537]:
+TAMABOTCHI
+
+
+String [538]:
+TAMABOTCHI
+
+
+String [539]:
+TAMABOTCHI
+
+
+String [540]:
+TANTOTCHI
+
+
+String [541]:
+CHIRORITCHI
+
+
+String [542]:
+MIMITAMATCHI
+
+
+String [543]:
+P-TOMATCHI
+
+
+String [544]:
+FUYOFUYOTCHI
+
+
+String [545]:
+MOKUMOKUTCHI
+
+
+String [546]:
+HARETCHI
+
+
+String [547]:
+SOYOFUWATCHI
+
+
+String [548]:
+TORORITCHI
+
+
+String [549]:
+TERUKEROTCHI
+
+
+String [550]:
+MOKOKOTCHI
+
+
+String [551]:
+KURUPOYOTCHI
+
+
+String [552]:
+LOVELITCHI
+
+
+String [553]:
+CHAMAMETCHI
+
+
+String [554]:
+SEBIRETCHI
+
+
+String [555]:
+MOMOTCHI
+
+
+String [556]:
+ORENETCHI
+
+
+String [557]:
+CHARATCHI
+
+
+String [558]:
+GINJIROTCHI
+
+
+String [559]:
+KUCHIPATCHI
+
+
+String [560]:
+NINJANYATCHI
+
+
+String [561]:
+MIMITCHI
+
+
+String [562]:
+AWAMOKOTCHI
+
+
+String [563]:
+HIMETCHI
+
+
+String [564]:
+MAMETCHI
+
+
+String [565]:
+KUROMAMETCHI
+
+
+String [566]:
+KIKITCHI
+
+
+String [567]:
+GOZARUTCHI
+
+
+String [568]:
+COFFRETCHI
+
+
+String [569]:
+NELIATCHI
+
+
+String [570]:
+MEMETCHI
+
+
+String [571]:
+VIOLETCHI
+
+
+String [572]:
+WEEPTCHI
+
+
+String [573]:
+SIMAGURUTCHI
+
+
+String [574]:
+MURACHAKITCHI
+
+
+String [575]:
+PAINTOTCHI
+
+
+String [576]:
+NAZOTCHI
+
+
+String [577]:
+MAIDTCHI
+
+
+String [578]:
+TAMASUTETCHI
+
+
+String [579]:
+DEPAGATCHI
+
+
+String [580]:
+DAIKUTCHI
+
+
+String [581]:
+HAMMERTCHI
+
+
+String [582]:
+ECOUSATCHI-E
+
+
+String [583]:
+ECOUSATCHI-C
+
+
+String [584]:
+ECOUSATCHI-O
+
+
+String [585]:
+UWASATCHI
+
+
+String [586]:
+PUKKUTCHI
+
+
+String [587]:
+KUMATTATCHI
+
+
+String [588]:
+NENETCHI
+
+
+String [589]:
+SHIRIMOTCHI
+
+
+String [590]:
+VALETTCHI
+
+
+String [591]:
+TOURCONTCHI
+
+
+String [592]:
+CHUKATCHI
+
+
+String [593]:
+WATAWATATCHI
+
+
+String [594]:
+AMIAMITCHI
+
+
+String [595]:
+WATATCHI
+
+
+String [596]:
+CRAYONTCHI
+
+
+String [597]:
+MAGICTCHI
+
+
+String [598]:
+SHOOTTCHI
+
+
+String [599]:
+PATITCHI
+
+
+String [600]:
+DR.STARTCHI
+
+
+String [601]:
+PSYCHETCHI
+
+
+String [602]:
+CHICTCHI
+
+
+String [603]:
+PIERROTCHI
+
+
+String [604]:
+UNICORNTCHI
+
+
+String [605]:
+DEKOTCHI
+
+
+String [606]:
+MAJOKKOTCHI
+
+
+String [607]:
+HATAKEMOTCHI
+
+
+String [608]:
+ROSETCHI
+
+
+String [609]:
+MUSIHARUTCHI
+
+
+String [610]:
+BUTTERFLYTCHI
+
+
+String [611]:
+ATTENDANT
+
+
+String [612]:
+YOUNGDROTCHI
+
+
+String [613]:
+YOTSUBATCHI
+
+
+String [614]:
+WITCHI
+
+
+String [615]:
+JEWELYBOXTCHI
+
+
+String [616]:
+MASKUTCHI
+
+
+String [617]:
+ICHIRINSHATCHI
+
+
+String [618]:
+HOSIGIRLTCHI
+
+
+String [619]:
+NONOPOTCHI
+
+
+String [620]:
+SANTACLAUTCHI
+
+
+String [621]:
+KNIGHTTCHI
+
+
+String [622]:
+OTOGITCHI BRO
+
+
+String [623]:
+OTOGITCHI SIS
+
+
+String [624]:
+HIMEBARATCHI
+
+
+String [625]:
+PICHIPITCHI
+
+
+String [626]:
+PUMPKITCHI
+
+
+String [627]:
+YOUMOTCHI
+
+
+String [628]:
+TUTURINATCHI
+
+
+String [629]:
+FAIRYTCHI
+
+
+String [630]:
+MAJORITCHI
+
+
+String [631]:
+MADAMTCHI
+
+
+String [632]:
+LOVESOLATCHI
+
+
+String [633]:
+KYAWATCHI
+
+
+String [634]:
+MOTETCHI
+
+
+String [635]:
+MIRAITCHI
+
+
+String [636]:
+CLULUTCHI
+
+
+String [637]:
+MORIJIKATCHI
+
+
+String [638]:
+GURIGURITCHI
+
+
+String [639]:
+HANAFUWATCHI
+
+
+String [640]:
+BONNETCHI
+
+
+String [641]:
+JELLYTCHI
+
+
+String [642]:
+NEJIROBOTCHI
+
+
+String [643]:
+KUNOITCHI
+
+
+String [644]:
+NIJIFUWATCHI
+
+
+String [645]:
+MORIRITCHI
+
+
+String [646]:
+POMPOMTCHI
+
+
+String [647]:
+ACCHITCHI
+
+
+String [648]:
+PIANITCHI
+
+
+String [649]:
+RINKURUTCHI
+
+
+String [650]:
+SIMASIMATCHI
+
+
+String [651]:
+YUMEMITCHI
+
+
+String [652]:
+HIMESPETCHI
+
+
+String [653]:
+LET'S PLAY
+AT HOME!
+
+
+String [654]:
+MAIL ORDER
+IS GREAT.
+
+
+String [655]:
+LET'S COOK
+SOMETHING!
+
+
+String [656]:
+LET'S PLAY
+OUTSIDE.
+
+
+String [657]:
+LET'S GO TO
+THE ARCADE!
+
+
+String [658]:
+I WANT TO
+EAT OUT.
+
+
+String [659]:
+I NEED NEW
+ACCESSORIES!
+
+
+String [660]:
+LET'S CHANGE
+THINGS UP.
+
+
+String [661]:
+I NEED HELP
+TRAINING!
+
+
+String [662]:
+WHY NOT MAKE
+AN ALBUM?
+
+
+String [663]:
+I'LL STAY
+FOR A WHILE.
+
+
+String [664]:
+CHOOSE
+GOOD PHOTOS.
+
+
+String [665]:
+THANKS FOR
+EVERYTHING.
+
+
+String [666]:
+I'M A PRO
+NOW! THANKS!
+
+
+String [667]:
+TAKE A PIC
+OF A COLOR.
+
+
+String [668]:
+PICK A SHAPE
+AND COLOR.
+
+
+String [669]:
+TAKE 2
+FOOD PHOTOS!
+
+
+String [670]:
+HI THERE! MY
+NAME IS
+
+LOVELITCHI!
+I WASN'T
+
+EXPECTING TO
+MAKE A NEW
+
+FRIEND
+TODAY. WHAT
+
+A GREAT
+SURPRISE!
+
+
+String [671]:
+I'M
+CHAMAMETCHI!
+
+THIS IS SUCH
+A NICE
+
+PLACE. WHY
+NOT TAKE
+
+SOME PHOTOS
+HERE?
+
+
+String [672]:
+HI, I'M
+SEBIRETCHI.
+
+IT'S ALWAYS
+FUN MEETING
+
+NEW TAMA
+WHILE YOU'RE
+
+OUT ON
+A WALK!
+
+
+String [673]:
+NICE TO MEET
+YOU. I'M
+
+MOMOTCHI!
+I HAVE A
+
+FEELING
+WE'RE GOING
+
+TO BE GREAT
+FRIENDS.
+
+
+String [674]:
+YO, THE
+NAME'S
+
+ORENETCHI.
+TAKE A
+
+PICTURE OF
+ME, OKAY?
+
+
+String [675]:
+I AM THE
+FAMOUS
+
+CHARATCHI!
+IT'S GOT TO
+
+BE FATE THAT
+WE MET LIKE
+
+THIS, DON'T
+YOU THINK?
+
+
+String [676]:
+HIYA! I'M
+GINJIROTCHI.
+
+I'M GLAD
+I GOT TO
+
+MEET YOU
+TODAY.
+
+
+String [677]:
+KUCHIPATCHI,
+ON THE
+
+SCENE! SAY,
+DO YOU KNOW
+
+ANY GOOD
+PLACES TO
+
+EAT AROUND
+HERE?
+
+
+String [678]:
+NOW YOU SEE
+ME, NOW YOU
+
+DON'T! I'M
+NINJANYATCHI
+
+AND I'M
+TRAINING TO
+
+BE A NINJA.
+
+
+String [679]:
+HOP-HOP, I'M
+MIMITCHI! IF
+
+YOU EVER
+HAVE TROUBLE
+
+WITH YOUR
+SCHOOL WORK,
+
+I'M HERE
+TO HELP!
+
+
+String [680]:
+AWAMOKOTCHI
+HERE. SO
+
+GLAD TO MEET
+YOU.
+
+
+String [681]:
+I AM CALLED
+HIMETCHI.
+
+IT IS AN
+HONOR TO
+
+MEET YOU♥
+
+
+String [682]:
+NICE TO MEET
+YOU! MY
+
+NAME'S
+MAMETCHI.
+
+THIS PLACE
+HAS GIVEN ME
+
+A TON OF
+IDEAS FOR
+
+NEW
+INVENTIONS!
+
+
+String [683]:
+THE NAME'S
+WEEPTCHI.
+
+WANT TO
+TAKE A
+
+PICTURE
+TOGETHER?
+
+
+String [684]:
+GOOD TO MEET
+YA, I'M
+
+KIKITCHI.
+HEY, LET'S
+
+TAKE A PHOTO
+TOGETHER!
+
+
+String [685]:
+GOZARUTCHI
+IS PLEASED
+
+TO MEET YOU.
+I USUALLY
+
+TRAIN IN
+SECRET - YOU
+
+DID WELL TO
+FIND ME.
+
+
+String [686]:
+I LOVE
+MAKEUP SOOO
+
+MUCH♥
+OH, HI.
+
+I DIDN'T SEE
+YOU THERE!
+
+I'M
+COFFRETCHI.
+
+
+String [687]:
+OH, HI! MY
+NAME IS
+
+NELIATCHI.
+I DIDN'T
+
+THINK I'D
+MEET ANOTHER
+
+TAMA
+IN A PLACE
+
+LIKE THIS!
+
+
+String [688]:
+HI! IT'S ME,
+MEMETCHI!
+
+YOU'RE SO
+STYLISH, I
+
+CAN'T TAKE
+MY EYES
+
+OFF YOU!
+CAN WE TAKE
+
+A PHOTO
+TOGETHER?
+
+
+String [689]:
+YOU CAN
+CALL ME
+
+VIOLETCHI.
+LET ME TELL
+
+YOU ALL
+ABOUT THE
+
+PRETTY
+FLOWER I
+
+FOUND TODAY!
+
+
+String [690]:
+KUROMAMETCHI
+HERE!
+
+I KNOW THIS
+SOUNDS KINDA
+
+LAME, BUT…
+CAN YOU TAKE
+
+MY PICTURE?
+
+
+String [691]:
+I'M
+SIMAGURUTCHI
+
+AND MY
+FAVORITE
+
+THINGS ARE
+ANYTHING
+
+THAT'S CURLY
+OR HAS
+
+STRIPES.
+
+
+String [692]:
+WHOA,
+IT'S YOU!
+
+AND
+IT'S ME,
+
+MURACHAKI-
+TCHI!
+
+
+String [693]:
+MY NAME'S
+PAINTOTCHI.
+
+THE SCENERY
+AROUND HERE
+
+IS A REAL
+WORK OF ART!
+
+
+String [694]:
+…………
+
+
+String [695]:
+GREETINGS.
+MY NAME IS
+
+MAIDTCHI.
+I'M ON A
+
+BREAK FROM
+MY JOB
+
+AT THE
+RESTAURANT.
+
+
+String [696]:
+TAMASUTETCHI
+IS HERE,
+
+READY TO
+PLAY! THE
+
+GAMES AT THE
+TAMA STORE
+
+ARCADE ARE
+GREAT!
+
+
+String [697]:
+HEY HEY, I'M
+DEPAGATCHI.
+
+THANKS FOR
+CHECKING OUT
+
+THE
+TAMA STORE.
+
+
+String [698]:
+THE NAME'S
+DAIKUTCHI.
+
+MY JOB KEEPS
+ME BUSY, SO
+
+IT'S NICE TO
+TAKE A BREAK
+
+NOW AND
+THEN.
+
+
+String [699]:
+HEY THERE.
+I'M
+
+HAMMERTCHI.
+LET ME KNOW
+
+IF YOU WANT
+ANY WORK
+
+DONE TO
+YOUR ROOM.
+
+
+String [700]:
+GREETINGS,
+EARTHLING.
+
+I AM
+ECOUSATCHI.
+
+DON'T FORGET
+YOUR ECO BAG
+
+WHEN YOU
+GO OUT!
+
+
+String [701]:
+GREETINGS,
+EARTHLING.
+
+I AM
+ECOUSATCHI.
+
+YOUR PLANET
+HAS SOME
+
+VERY
+BEAUTIFUL
+
+LANDSCAPES.
+
+
+String [702]:
+GREETINGS,
+EARTHLING.
+
+I AM
+ECOUSATCHI.
+
+WANT TO COME
+CLEAN UP
+
+LITTER
+WITH ME?
+
+
+String [703]:
+TEEHEE, I'M
+UWASATCHI.
+
+HEY, DID
+YOU HEAR?
+
+THERE'S 
+RUMOR GOING
+
+AROUND THAT
+THERE'S A
+
+TON OF
+TAMA
+
+AROUND HERE
+TO DISCOVER.
+
+
+String [704]:
+MY NAME'S
+PUKKUTCHI.
+
+I'M ON THE
+HUNT FOR
+
+SOME YUMMY
+FOOD!
+
+
+String [705]:
+OH DEAR,
+OH DEAR,
+
+I DO WANT TO
+MAKE FRIENDS
+
+WITH YOU,
+BUT I'M SO
+
+NERVOUS.
+WHAT TO DO,
+
+WHAT TO DO?
+
+
+String [706]:
+HEY,
+I HAVEN'T
+
+SEEN YOU
+AROUND HERE
+
+BEFORE.
+LET'S BE
+
+FRIENDS!
+MY NAME IS
+
+NENETCHI.
+
+
+String [707]:
+SHIRIMOTCHI
+IS HERE! I'M
+
+JUST PASSING
+THROUGH ON
+
+MY TRIP
+AROUND
+
+THE WORLD.
+
+
+String [708]:
+HELLO THERE!
+IT IS I,
+
+VALETTCHI.
+WHAT'S ON
+
+YOUR
+SCHEDULE FOR
+
+TODAY?
+
+
+String [709]:
+TOURCONTCHI
+COMING
+
+THROUGH!
+I'M ON A
+
+GRAND TOUR
+TO EVERY
+
+TOWN IN
+THE WORLD!
+
+
+String [710]:
+HIYA!
+I MEAN,
+
+HELLO.
+I MEAN, HEY!
+
+WANT TO TAKE
+A PICTURE
+
+WITH ME?
+
+
+String [711]:
+WATAWATATCHI
+IS MY NAME♪
+
+ISN'T THE
+VIEW HERE
+
+JUST
+WONDERFUL?
+
+
+String [712]:
+NICE TO MEET
+YOU. I'M
+
+AMIAMITCHI♪
+WANT TO DO
+
+SOME ARTS
+AND CRAFTS
+
+WITH ME?
+
+
+String [713]:
+HEY THERE,
+I'M
+
+WATATCHI.
+I WAS BLOWN
+
+OVER HERE
+BY THE
+
+WIND!
+
+
+String [714]:
+I MADE A NEW
+FRIEND!
+
+FUNNY STUFF
+HAPPENS WHEN
+
+I GO OUT TO
+DRAW. I'M
+
+CRAYONTCHI,
+BY THE WAY.
+
+
+String [715]:
+I AM
+MAGICTCHI,
+
+MASTER OF
+MAGIC!
+
+I WAS JUST
+GETTING
+
+READY TO PUT
+ON A SHOW.
+
+
+String [716]:
+SHOOTTCHI
+SHOOTS,
+
+SHOOTTCHI
+SCORES!
+
+DO YOU LIKE
+FOOTBALL?
+
+DO YOU KNOW
+ANY COOL
+
+TRICK SHOTS?
+
+
+String [717]:
+I'M PATITCHI
+AND I LOVE
+
+BAKING
+CAKES.
+
+I GO ON
+WALKS TO
+
+HELP GIVE ME
+IDEAS FOR
+
+NEW DESIGNS.
+
+
+String [718]:
+GOOD DAY,
+I AM
+
+DR.STARTCHI.
+STARING AT
+
+THE STARS
+THROUGH MY
+
+TELESCOPE IS
+GREAT, BUT
+
+I HAVE TO
+COME DOWN TO
+
+EARTH
+SOMETIMES.
+
+
+String [719]:
+HI, I'M
+PSYCHETCHI.
+
+I DECIDED TO
+GO FOR A
+
+WALK TO
+CELEBRATE
+
+MY NEW
+HAIR STYLE!
+
+
+String [720]:
+HELLO THERE,
+I'M CHICTCHI.
+
+I'M GONNA GO
+BUY SOME
+
+STYLISH
+ACCESSORIES
+
+TO MAKE ME
+LOOK MORE
+
+GROWN UP!
+
+
+String [721]:
+HEEHEE, I'M
+PIERROTCHI!
+
+KNOW
+ANYWHERE
+
+AROUND HERE
+WHERE I CAN
+
+SET UP A
+CIRCUS TENT?
+
+
+String [722]:
+I AM
+UNICORNTCHI.
+
+I'VE BEEN
+FLYING ALL
+
+DAY, SO I
+DECIDED TO
+
+REST HERE
+A WHILE.
+
+
+String [723]:
+HI. I'M
+DEKOTCHI.
+
+WHAT ARE YOU
+DOING HERE?
+
+
+String [724]:
+UH, HI…
+MY NAME'S
+
+MAJOKKOTCHI.
+I'M
+
+PRACTICING
+FOR MY FIRST
+
+BIG MAGIC
+SHOW. I'M A
+
+LITTLE
+NERVOUS, BUT
+
+IT SHOULD
+BE FUN♪
+
+
+String [725]:
+HATAKEMOTCHI
+IS HERE AND
+
+READY TO
+FARM! ARE
+
+THERE ANY
+GOOD FIELDS
+
+AROUND HERE?
+
+
+String [726]:
+HELLO, MY
+NAME'S
+
+ROSETCHI.
+MEETING YOU
+
+IS LIKE A
+SWEET RAIN
+
+SHOWER ON A
+HOT DAY!
+
+
+String [727]:
+MUSIHARUTCHI
+IS MY NAME,
+
+WALKING IS
+MY GAME!
+
+…WELL,
+IT'S WHAT
+
+I'M DOING
+TODAY,
+
+ANYWAY.
+
+
+String [728]:
+ISN'T THIS
+PLACE JUST
+
+BEAUTIFUL?
+I'M
+
+BUTTERFLY-
+TCHI.
+
+LET'S BE
+FRIENDS!
+
+
+String [729]:
+HEY, DO YOU
+LIKE TAKING
+
+PHOTOS?
+ME TOO!
+
+LET'S TAKE
+SOME RIGHT
+
+NOW, JUST
+YOU AND ME!
+
+
+String [730]:
+I'M NOT A
+GHOST, I'M
+
+JUST
+YOUNGDROTCHI.
+
+THERE'S NO
+NEED TO BE
+
+AFRAID
+OF ME!
+
+
+String [731]:
+HI, I'M
+YOTSUBATCHI.
+
+HAS ANYTHING
+LUCKY
+
+HAPPENED TO
+YOU TODAY?
+
+
+String [732]:
+MY NAME'S
+WITCHI.
+
+PHOTOS ARE
+JUST LIKE
+
+MAGIC! LET'S
+TAKE SOME
+
+NOW.
+
+
+String [733]:
+HI THERE.
+
+JEWELYBOX-
+TCHI
+
+IS MY NAME.
+DO YOU KNOW
+
+ANYWHERE I
+CAN GET SOME
+
+NEW JEWELRY?
+
+
+String [734]:
+I AM
+MASKUTCHI.
+
+WHENEVER I
+SEE A REALLY
+
+STUNNING
+LANDSCAPE,
+
+I ALWAYS
+TAKE A PHOTO
+
+OR TWO.
+
+
+String [735]:
+HI,
+I'M
+
+ICHI-
+RINSHATCHI
+
+AND I LOVE
+UNICYCLING.
+
+I GOT LOST
+ON MY WAY
+
+TO THE
+CIRCUS, BUT
+
+AT LEAST I
+GOT TO
+
+MEET YOU!
+
+
+String [736]:
+HOSIGIRLTCHI
+IS HERE!
+
+HEY, DO YOU
+LIKE PHOTOS?
+
+I DO! I TAKE
+'EM ALL
+
+THE TIME!
+
+
+String [737]:
+I'M
+NONOPOTCHI.
+
+IT'S COLD
+WHERE I'M
+
+FROM, SO IT
+FEELS REALLY
+
+WARM HERE.
+
+
+String [738]:
+HOHOHO,
+
+SANTA-
+CLAUTCHI
+
+IS HERE!
+DON'T TELL
+
+ANYBODY YOU
+SAW ME, ALL
+
+RIGHT? I'LL
+SEE YOU
+
+AGAIN ON
+CHRISTMAS!
+
+
+String [739]:
+I'M PLEASED
+TO MEET
+
+YOU. I AM
+KNIGHTTCHI.
+
+WE MUST TAKE
+A PHOTO TO
+
+CELEBRATE
+OUR MEETING!
+
+
+String [740]:
+I'M
+OTOGITCHI.
+
+I LIKE FAIRY
+TALES AND
+
+GOING ON
+LONG WALKS.
+
+
+String [741]:
+TUM TEE
+TUM…
+
+TRA LA
+LAAA…
+
+
+String [742]:
+HIMEBARATCHI
+HERE.
+
+LET'S TAKE A
+PHOTO
+
+TOGETHER!
+
+
+String [743]:
+MY NAME'S
+PICHIPITCHI.
+
+DO YOU KNOW
+ANYWHERE I
+
+CAN FIND A
+PART TIME
+
+JOB?
+
+
+String [744]:
+HI, I'M
+PUMPKITCHI.
+
+I LOVE
+SEEING NEW
+
+PLACES AND
+MAKING NEW
+
+TAMA
+FRIENDS.
+
+
+String [745]:
+CALL ME
+YOUMOTCHI.
+
+LET'S TAKE
+THE BEST
+
+PHOTO EVER!
+
+
+String [746]:
+LET'S TAKE
+SOME PHOTOS
+
+AND POST
+THEM ON THE
+
+TAMA SOCIAL.
+I BET
+
+WE'LL GET
+LOTS OF
+
+LIKES!
+
+
+String [747]:
+TEEHEE, I'M
+FAIRYTCHI.
+
+IT'S SO NICE
+TO MEET YOU!
+
+
+String [748]:
+MAJORITCHI'S
+HERE!
+
+I CAN'T WAIT
+TO MAKE SOME
+
+NEW FRIENDS!
+
+
+String [749]:
+I AM
+MADAMTCHI.
+
+IT'S A REAL
+PLEASURE TO
+
+MEET YOU.
+
+
+String [750]:
+NICE TO
+MEET YOU,
+
+LOVESOLATCHI
+HERE!
+
+I JUST LOVE
+STARING UP
+
+AT THE SKY.
+
+
+String [751]:
+HI HI, I'M
+KYAWATCHI!
+
+WANNA TAKE
+SOME PHOTOS?
+
+YEAH♥
+
+
+String [752]:
+MY NAME'S
+MOTETCHI.
+
+YOU SURE
+HAVE A LOT
+
+OF COOL
+PLACES HERE
+
+ON YOUR
+PLANET.
+
+
+String [753]:
+HI. I'M
+MIRAITCHI,
+
+AND GUESS
+WHAT? I'M
+
+FROM THE
+FUTURE!
+
+BUT KEEP
+THAT SECRET,
+
+OKAY?
+
+
+String [754]:
+I AM
+CLULUTCHI.
+
+I LOVE
+SEEING
+
+TAMAS
+SMILING WHEN
+
+I GO OUT.
+
+
+String [755]:
+I'M
+MORIJIKATCHI
+
+AND I LOVE
+NATURE.
+
+I LIKE GOING
+FOR WALKS IN
+
+THE WOODS
+BEST OF ALL!
+
+
+String [756]:
+MY NAME'S
+GURIGURITCHI
+
+AND I LOVE
+TO DANCE.
+
+THIS LOOKS
+LIKE A
+
+NICE PLACE
+TO DANCE!
+
+
+String [757]:
+I'M
+HANAFUWATCHI
+
+AND I'M
+PLEASED
+
+TO MEET YOU!
+YOU HAVE A
+
+LOVELY
+SMILE.
+
+
+String [758]:
+HELLO, I'M
+BONNETCHI.
+
+HOW NICE TO
+MEET
+
+SOMEBODY
+NEW!
+
+
+String [759]:
+OH HEY,
+YOU'RE OUT
+
+FOR A WALK
+TOO? WANT TO
+
+GO TOGETHER?
+I'M
+
+JELLYTCHI,
+BY THE WAY.
+
+
+String [760]:
+I AM CALLED
+NEJIROBOTCHI.
+
+IT'S ALWAYS
+FUN GOING
+
+OUT AND
+MEETING
+
+NEW TAMAS.
+
+
+String [761]:
+I AM CALLED
+KUNOITCHI.
+
+IT'S NICE TO
+MEET YOU,
+
+BUT I NEED
+TO GET BACK
+
+TO MY
+TRAINING
+
+SOON.
+
+
+String [762]:
+NIJIFUWATCHI
+IS WHAT
+
+THEY CALL
+ME.
+
+GOING OUT
+FOR SOME AIR
+
+IS A GREAT
+WAY TO
+
+REFRESH
+YOURSELF,
+
+DON'T YOU
+THINK?
+
+
+String [763]:
+NICE TO MEET
+YA, I'M
+
+MORIRITCHI★
+THIS PLACE
+
+IS FULL OF
+SURPRISES,
+
+I NEVER GET
+TIRED OF
+
+EXPLORING
+IT.
+
+
+String [764]:
+HI, I'M
+POMPOMTCHI!
+
+WHATEVER YOU
+FEEL LIKE
+
+DOING, I'LL
+BE CHEERING
+
+YOU ON ALL
+THE WAY★
+
+
+String [765]:
+YO. I'M
+ACCHITCHI.
+
+THERE'S
+NOTHING LIKE
+
+EXERCISING
+OUTDOORS.
+
+KNOW WHAT
+I MEAN?
+
+
+String [766]:
+TUM TEE TUM,
+I AM
+
+PIANITCHI♪
+I WAS JUST
+
+WALKING
+AROUND
+
+TRYING TO
+THINK UP
+
+IDEAS FOR
+NEW TUNES.
+
+
+String [767]:
+I'M
+RINKURUTCHI♪
+
+HEY, CAN YOU
+TAKE MY
+
+PICTURE?
+THAT'D BE
+
+SO NEAT!
+
+
+String [768]:
+MY NAME'S
+SIMASIMATCHI
+
+AND I LOVE
+STRIPES!
+
+HAVE YOU
+SEEN ANY
+
+COOL STRIPED
+STUFF AROUND
+
+HERE?
+
+
+String [769]:
+HELLO, I'M
+YUMEMITCHI.
+
+I LOVE
+SEEING
+
+TAMAS WORK
+HARD TO
+
+ACHIEVE
+THEIR
+
+DREAMS!
+
+
+String [770]:
+NICE TO MEET
+YOU, I'M
+
+HIMESPETCHI.
+GOING OUT
+
+AND WALKING
+AROUND SURE
+
+IS FUN★
+
+
+String [771]:
+WELCOME!
+HOW ABOUT A
+
+MORNING
+DISH?
+
+
+String [772]:
+WELCOME!
+HOW ABOUT A
+
+LUNCHTIME
+DISH?
+
+
+String [773]:
+WELCOME!
+HOW ABOUT AN
+
+AFTERNOON
+DISH?
+
+
+String [774]:
+WELCOME!
+HOW ABOUT A
+
+DINNERTIME
+DISH?
+
+
+String [775]:
+WELCOME!
+HOW ABOUT A
+
+SPECIAL
+DISH?
+
+
+String [776]:
+HELLO, MAY I
+HELP YOU?
+
+
+String [777]:
+WANT TO
+ENTER THE
+
+DAILY
+PRIZE DRAW?
+
+
+String [778]:
+1ST PLACE!
+AMAZING!
+
+
+String [779]:
+2ND PLACE!
+NICE!
+
+
+String [780]:
+3RD PLACE!
+
+
+String [781]:
+4TH PLACE.
+
+
+String [782]:
+LAST PLACE.
+SORRY…
+
+
+String [783]:
+TRY AGAIN
+TOMORROW!
+
+
+String [784]:
+SINCE
+TODAY'S DATE
+
+HAS A ZERO,
+IT'S
+
+ECO DAY.
+WE CELEBRATE
+
+IT ON A DAY
+WITH A ZERO
+
+BECAUSE
+THERE
+
+SHOULD BE
+ZERO
+
+GARBAGE.
+
+
+String [785]:
+GREAT!
+SO CLEAN!
+
+THANK YOU
+SO MUCH FOR
+
+YOUR HELP!
+
+
+String [786]:
+HERE'S AN
+ECO BAG.
+
+NOW YOU
+WON'T NEED A
+
+PLASTIC BAG
+ANYMORE!
+
+
+String [787]:
+HERE'S AN
+ECO FORK SO
+
+YOU CAN
+SAVE THE
+
+ENVIRONMENT
+AS YOU ENJOY
+
+YOUR MEAL!
+
+
+String [788]:
+HERE'S AN
+ECO BADGE
+
+TO SHOW YOU
+HELPED TO
+
+SAVE THE
+ENVIRONMENT.
+
+
+String [789]:
+SECRET TREAT
+FOR EARLY
+
+RISERS! I
+WILL GIVE
+
+YOU A
+REMODEL
+
+COUPON THAT
+CAN BE USED
+
+AT THE
+TAMA STORE.
+
+
+String [790]:
+SECRET TREAT
+FOR EARLY
+
+RISERS! I
+WILL GIVE
+
+YOU A
+FASHION
+
+COUPON THAT
+CAN BE USED
+
+AT THE
+TAMA STORE.
+
+
+String [791]:
+WELCOME TO
+THE PARK!
+
+I'M
+
+BUTTERFLY-
+TCHI.
+
+ISN'T IT
+GREAT HERE?
+
+BUT YOU CAN
+SEE EVEN
+
+MORE PLACES
+BY SELECTING
+
+GO OUT.
+TRY TAKING
+
+PHOTOS OF
+ANY PLACES
+
+YOU REALLY
+LIKE!
+
+
+String [792]:
+I JUST LOVE
+MORNINGS!
+
+HAVE YOU
+SEEN THE
+
+RESTAURANT'S
+MORNING
+
+MENU? IT'S
+PRETTY COOL
+
+GETTING
+SPECIAL FOOD
+
+AT DIFFERENT
+TIMES OF
+
+THE DAY.
+
+
+String [793]:
+HI, I'M
+OTOGITCHI.
+
+SOMETIMES
+IT'S FUN TO
+
+JUST HANG
+AROUND THE
+
+HOUSE.
+YOU CAN
+
+ORDER FOOD
+DELIVERIES,
+
+TIDY YOUR
+ROOM, TAKE A
+
+BATH…
+I'M GOING TO
+
+HEAD HOME
+AND READ
+
+FOR A
+WHILE.
+
+
+String [794]:
+I WISH
+I COULD MAKE
+
+MY ROOM LOOK
+LIKE A
+
+FAIRYTALE
+KINGDOM.
+
+YOU CAN
+GET IT
+
+REDECORATED
+AND MOVE
+
+FURNITURE
+AROUND TO
+
+MAKE YOUR
+IDEAL ROOM.
+
+THEN, YOU
+CAN TAKE A
+
+PHOTO AND
+SHARE IT
+
+WITH ALL
+YOUR
+
+FRIENDS!
+
+
+String [795]:
+I'M
+MORIRITCHI,
+
+AND I KNOW A
+TON ABOUT
+
+FASHION!
+THEY'VE GOT
+
+ALL THE
+HOTTEST NEW
+
+ACCESSORIES
+DOWN AT THE
+
+TAMA STORE.
+YOU SHOULD
+
+TAKE A LOOK
+SOMETIME!
+
+
+String [796]:
+I UPLOADED
+ONE OF MY
+
+PHOTOS TO
+THE TAMA
+
+SOCIAL
+THE OTHER
+
+DAY,AND IT
+GOT A LIKE!
+
+
+String [797]:
+HIYA!
+CALL ME
+
+ACCHITCHI.
+THEY'RE
+
+HAVING A
+SPORTS DAY
+
+DOWN AT THE
+ARCADE, AND
+
+I'M GONNA
+SET A NEW
+
+RECORD. WANT
+TO WORK OUT
+
+WITH ME?
+
+
+String [798]:
+HULA HOOPS
+ARE A GREAT
+
+WAY TO
+EXERCISE!
+
+I'M NOT VERY
+GOOD AT IT,
+
+THOUGH…
+I'LL HAVE TO
+
+PRACTICE
+HARD TO BE A
+
+GREAT
+HULA-HOOPER!
+
+
+String [799]:
+HI!
+I'M
+
+ICHI-
+RINSHATCHI
+
+AND I LOVE
+UNICYCLING.
+
+I RODE OVER
+TO THE PHOTO
+
+EXHIBIT A
+WHILE BACK
+
+AND SAW A
+BUNCH OF NEW
+
+PHOTOS. YOU
+SHOULD CHECK
+
+IT OUT
+SOMETIME!
+
+
+String [800]:
+HI!
+I'M
+
+ICHI-
+RINSHATCHI
+
+AND I LOVE
+UNICYCLING.
+
+IT'S MY
+DREAM TO
+
+PERFORM A
+BUNCH OF
+
+TRICKS ON
+STAGE
+
+SOMEDAY.
+I JUST WISH
+
+I HAD MY OWN
+ROOM TO
+
+PRACTICE IN.
+HOW ABOUT
+
+YOU? DO YOU
+HAVE ANY
+
+FUTURE
+DREAMS?
+
+
+String [801]:
+I AM
+MASKUTCHI.
+
+DID YOU
+KNOW THE
+
+TAMA STORE'S
+PRIZE DRAW
+
+HAS FIVE
+DIFFERENT
+
+PRIZE
+CLASSES.
+
+IF YOU TRY
+IT EVERY
+
+DAY, YOU'LL
+PROBABLY GET
+
+1ST PRIZE
+SOONER
+
+OR LATER,
+RIGHT?
+
+
+String [802]:
+I AM
+MASKUTCHI.
+
+DID YOU
+KNOW IF YOU
+
+WATER THE
+PLANTS IN
+
+YOUR GARDEN
+EVERY DAY,
+
+SOMETHING
+AMAZING WILL
+
+HAPPEN!
+
+
+String [803]:
+IT'S ME,
+AMIAMITCHI!
+
+DIY IS FUN,
+AND IT'S A
+
+GREAT WAY TO
+CUSTOMIZE
+
+YOUR STUFF,
+TOO. JUST
+
+MAKE SURE
+YOU TAKE
+
+GOOD CARE OF
+THE THINGS
+
+YOU MAKE,
+ALL RIGHT?
+
+
+String [804]:
+IT'S ME,
+AMIAMITCHI!
+
+I'VE HEARD
+SOME
+
+TAMA
+CHARACTER
+
+HAVE EVEN
+MORE THAN
+
+100 FRIENDS!
+OF COURSE
+
+IT'S NOT THE
+NUMBER THAT
+
+MATTERS, BUT
+THE GOOD
+
+TIMES YOU
+AND YOUR
+
+FRIENDS HAVE
+TOGETHER.
+
+
+String [805]:
+HI HI! I'M
+YOUNGDROTCHI.
+
+I HAD A
+REALLY SCARY
+
+DREAM LAST
+NIGHT.
+
+I COULDN'T
+GET BACK TO
+
+SLEEP FOR
+HOURS. WHAT
+
+KINDS OF
+DREAMS DO
+
+YOU HAVE?
+I HOPE
+
+THEY'RE FUN!
+
+
+String [806]:
+HI HI! I'M
+YOUNGDROTCHI.
+
+I LOVE
+AFTERNOON
+
+SNACKS, BUT
+TOO MANY CAN
+
+BE BAD FOR
+YOUR TEETH.
+
+BE SURE TO
+GO EASY ON
+
+THE SWEET
+STUFF!
+
+
+String [807]:
+PLAY GAMES
+AND GET
+
+GOTCHI
+POINTS!
+
+TODAY'S
+THEME IS
+
+LEISURE!
+
+
+String [808]:
+PLAY GAMES
+AND GET
+
+GOTCHI
+POINTS!
+
+TODAY'S
+THEME IS
+
+NATURE!
+
+
+String [809]:
+PLAY GAMES
+AND GET
+
+GOTCHI
+POINTS!
+
+TODAY'S
+THEME IS
+
+SPORTS!
+
+
+String [810]:
+AMAZING!
+I'VE NEVER
+
+MADE
+ANYTHING
+
+THIS GOOD
+BEFORE!
+
+
+String [811]:
+LET ME
+TRY THIS.
+
+
+String [812]:
+WHAT KIND
+OF SCENERY
+
+SHALL WE
+CAPTURE
+
+TODAY?
+
+
+String [813]:
+THANK YOU!
+I HOPE TO
+
+SEE YOU
+AGAIN!
+
+
+String [814]:
+HELLO, I'M
+THE SITTER.
+
+
+String [815]:
+I'LL TAKE
+GOOD CARE OF
+
+THEM! IT'S
+100 GOTCHI
+
+POINTS PER
+TAMA.
+
+IS THAT
+OKAY?
+
+
+String [816]:
+THANK YOU!
+I HOPE TO
+
+SEE YOU
+AGAIN!
+
+
+String [817]:
+YOU HAVE TO
+CLEAN UP
+
+BEFORE YOU
+PLAY!
+
+
+String [818]:
+…………
+
+
+String [819]:
+THANKS!
+SEE YOU
+SOON!
+
+
+String [820]:
+PLAY
+AGAIN
+SOON?
+
+
+String [821]:
+I'M GET-
+TING YOU
+A GIFT.
+
+
+String [822]:
+WANT TO
+HANG OUT
+TODAY?
+
+
+String [823]:
+I LOOOVE
+MORNING
+PARKS!
+
+
+String [824]:
+LET'S
+EXCHANGE
+ITEMS!
+
+
+String [825]:
+LET'S
+TAKE A
+PHOTO!
+
+
+String [826]:
+WANT TO
+COOK
+WITH ME?
+
+
+String [827]:
+SPECIAL
+EVENT ALERT!
+
+
+String [828]:
+HAPPY
+HALLOWEEN!
+
+
+String [829]:
+HAPPY TAMA
+ANNIVERSARY!
+
+
+String [830]:
+MERRY
+CHRISTMAS!
+
+
+String [831]:
+HAPPY
+VALENTINE'S
+
+DAY!
+
+
+String [832]:
+HAPPY
+EASTER!
+
+
+String [833]:
+I'VE GOT
+GREAT NEWS!
+
+
+String [834]:
+I'VE GOT
+GREAT NEWS!
+
+
+String [835]:
+SPECIAL EVENT
+ALERT!
+HEAD
+OVER TO
+TAMAGOTCHI.COM
+AND JOIN THE
+FUN!
+
+
+String [836]:
+DID YOU GO
+TO THE EVENT
+ALREADY?
+TAMAGOTCHI.COM
+IS THE PLACE
+TO BE!
+
+
+String [837]:
+GONE TO THE
+EVENT AT
+TAMAGOTCHI.COM
+YET? IF NOT,
+THEN HURRY!
+
+
+String [838]:
+HAPPY
+HALLOWEEN!
+CHECK OUT
+TAMAGOTCHI.COM
+FOR A
+SPOOKTACULAR
+EVENT!
+
+
+String [839]:
+GONE TO THE
+TAMAGOTCHI.COM
+HALLOWEEN
+EVENT YET?
+
+
+String [840]:
+HAPPY
+HALLOWEEN!
+IF YOU
+HAVEN'T
+CHECKED OUT
+THE
+TAMAGOTCHI.COM
+EVENT YET,
+YOU'D BEST
+HURRY!
+
+
+String [841]:
+HAPPY
+TAMAGOTCHI
+ANNIVERSARY!
+GO TO
+TAMAGOTCHI.COM
+FOR A FUN
+CELEBRATION!
+
+
+String [842]:
+DID YOU GO
+TO THE
+TAMAGOTCHI.COM
+EVENT YET?
+NOVEMBER IS
+TAMAGOTCHI'S
+ANNIVERSARY
+MONTH, YOU
+KNOW?
+
+
+String [843]:
+DID YOU
+JOIN THE
+TAMAGOTCHI
+CELEBRATION
+YET? GO TO
+TAMAGOTCHI.COM
+IF YOU
+HAVEN'T!
+
+
+String [844]:
+HAPPY
+HOLIDAYS!
+HEAD TO
+TAMAGOTCHI.COM
+FOR A
+FESTIVE
+WINTER
+EVENT!
+
+
+String [845]:
+PARTAKE IN
+THE HOLIDAY
+CHEER YET?
+TAMAGOTCHI.COM
+HAS A FUN
+EVENT GOING
+ON. YOU MIGHT
+GET SOMETHING
+NICE…
+
+
+String [846]:
+OH, HAPPY
+DAY!
+TAMAGOTCHI.COM
+HAS SOME
+HOLIDAY CHEER
+JUST FOR YOU!
+
+
+String [847]:
+HAPPY
+VALENTINE'S
+MONTH!
+TAMAGOTCHI.COM
+HAS A VERY
+SPECIAL EVENT
+UNDER WAY!
+
+
+String [848]:
+HAPPY
+VALENTINE'S
+MONTH!
+CHECK OUT THE
+TAMAGOTCHI.COM
+EVENT!
+
+
+String [849]:
+TAMAGOTCHI.COM
+HAS A
+WONDERFUL
+VALENTINE'S
+EVENT GOING
+ON. DID
+YOU KNOW?
+
+
+String [850]:
+HAPPY EASTER!
+VISIT
+TAMAGOTCHI.COM
+FOR A VERY
+SPECIAL
+EVENT!
+
+
+String [851]:
+HAVE YOU
+GONE TO THE
+EASTER EVENT
+AT
+TAMAGOTCHI.COM
+YET? I HEAR
+IT'S OUT OF
+THIS WORLD!
+
+
+String [852]:
+HAPPY EASTER!
+GO TO
+TAMAGOTCHI.COM
+NOW FOR AN
+INCREDIBLE
+EVENT!
+
+
+String [853]:
+BIG NEWS!
+THERE'S AN
+EVENT
+HAPPENING!
+HEAD TO
+TAMAGOTCHI.COM
+NOW!
+
+
+String [854]:
+HAVE YOU
+VISITED THE
+TAMAGOTCHI.COM
+EVENT YET?
+IT'S GOT ME
+SO EXCITED!
+
+
+String [855]:
+CHECK OUT THE
+TAMAGOTCHI.COM
+EVENT YET?
+THERE'S STILL
+TIME!
+
+
+String [856]:
+TAMAGOTCHI.COM
+HAS A STELLAR
+EVENT GOING
+ON! LET'S
+CHECK IT OUT!
+
+
+String [857]:
+I CAME TO
+TELL YOU
+ABOUT THE
+EVENT
+TAMAGOTCHI.COM
+HAS GOING ON.
+HAVE YOU
+VISITED YET?
+
+
+String [858]:
+TAMAGOTCHI.COM
+IS A
+WONDERLAND OF
+FUN! IF YOU
+HAVEN'T GONE,
+YOU'RE
+MISSING OUT!
+
+
+String [859]:
+READ OK
+PROFILE
+
+
+String [860]:
+READ OK
+FRIEND
+
+
+String [861]:
+READ OK
+CAMERA
+
+
+String [862]:
+READ OK
+BACK ITEM
+
+
+String [863]:
+READ OK
+BACK TAMA
+
+
+String [864]:
+READ OK
+MEETING
+
+
+String [865]:
+READ OK
+ITEM

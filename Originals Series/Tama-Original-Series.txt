@@ -1,0 +1,23 @@
+Tama Orginal
+1.8v
+Processor 
+4-Bit CMOS E0C6S46 
+    Data sheet: https://download.epson-europe.com/pub/electronics-de/asmic/4bit/62family/technicalmanual/tm_6s46.pdf
+
+    RAM 40 words × 4 bits 
+    ROM 6,144 words × 12 bits
+    Display data memory (80 words x 4 bits)
+JP1 pads on back, if add resistor will it become japanese?
+
+https://tama.loociano.com/#tamagotchi-original-series
+Tamagotchi Original Series
+Versions: P1 and P2, Angel and Ocean
+Release Dates: 1996-1998
+Specs
+CPU: 4-Bit CMOS E0C6S46 (Datasheet)
+Clock Speed: 32.768 kHz
+Memory: 640x4 words (RAM) 160x4 words (display)
+Tamagotchi Connection Series
+Versions: V1, V2, Mini, V3, V4, V4.5, V5, V5.5 (Celebrity) and V6 (Music Star)
+Release Dates: 2004-2009
+Tamagotchi Connection had a Debug Mode that could be enabled only by disassembling. Debug mode allows character selection and making time run faster.

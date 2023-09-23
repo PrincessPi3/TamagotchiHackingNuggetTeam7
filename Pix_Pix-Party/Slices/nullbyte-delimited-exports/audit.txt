@@ -1,0 +1,65 @@
+
+Scalpel version 1.60 audit file
+Started at Thu Jul 20 22:40:09 2023
+Command line:
+scalpel -c scalpel-nullbyte-split.conf -o nullbyte-delimited-exports BAGEL1DIP8.bin-170s259l.bin 
+
+Output directory: /mnt/c/Users/human/OneDrive/Documents/Tamagotchi/Pix_Pix-Party/Slices/nullbyte-delimited-exports
+Configuration file: scalpel-nullbyte-split.conf
+
+Opening target "/mnt/c/Users/human/OneDrive/Documents/Tamagotchi/Pix_Pix-Party/Slices/BAGEL1DIP8.bin-170s259l.bin"
+
+The following files were carved:
+File		  Start			Chop		Length		Extracted From
+00000048.bin          229		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000047.bin          226		NO                4		BAGEL1DIP8.bin-170s259l.bin
+00000046.bin          222		NO                5		BAGEL1DIP8.bin-170s259l.bin
+00000045.bin          221		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000044.bin          219		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000043.bin          218		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000042.bin          217		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000041.bin          215		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000040.bin          214		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000039.bin          213		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000038.bin          211		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000037.bin          210		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000036.bin          207		NO                4		BAGEL1DIP8.bin-170s259l.bin
+00000035.bin          205		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000034.bin          203		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000033.bin          201		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000032.bin          199		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000031.bin          197		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000030.bin          195		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000029.bin          193		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000028.bin          191		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000027.bin          189		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000026.bin          187		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000025.bin          185		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000024.bin          183		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000023.bin          181		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000022.bin          179		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000021.bin          177		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000020.bin          175		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000019.bin          153		NO               23		BAGEL1DIP8.bin-170s259l.bin
+00000018.bin          151		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000017.bin          149		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000016.bin          129		NO               21		BAGEL1DIP8.bin-170s259l.bin
+00000015.bin          128		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000014.bin          126		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000013.bin          124		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000012.bin          123		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000011.bin          122		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000010.bin          120		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000009.bin          119		NO                2		BAGEL1DIP8.bin-170s259l.bin
+00000008.bin          114		NO                6		BAGEL1DIP8.bin-170s259l.bin
+00000007.bin           82		NO               33		BAGEL1DIP8.bin-170s259l.bin
+00000006.bin           80		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000005.bin           70		NO               11		BAGEL1DIP8.bin-170s259l.bin
+00000004.bin           38		NO               33		BAGEL1DIP8.bin-170s259l.bin
+00000003.bin           36		NO                3		BAGEL1DIP8.bin-170s259l.bin
+00000002.bin           26		NO               11		BAGEL1DIP8.bin-170s259l.bin
+00000001.bin           12		NO               15		BAGEL1DIP8.bin-170s259l.bin
+00000000.bin            2		NO               11		BAGEL1DIP8.bin-170s259l.bin
+
+
+Completed at Thu Jul 20 22:40:09 2023

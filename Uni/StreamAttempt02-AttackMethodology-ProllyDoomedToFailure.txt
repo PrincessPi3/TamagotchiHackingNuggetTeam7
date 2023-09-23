@@ -1,0 +1,178 @@
+zxvbncczzcccccccccccccccccczccccccccccccccczczczczczczczczzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzznznzzzzzzzzznzzzzzcznczcnxczzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzghzxzzzzxvcz     
+    All external peripherals save for battery off
+        Battery pried up to show UART pads
+    Buttons all seperate, could be a problem
+
+    Hardware:
+        All available
+        BusPirate new open sourcen firmware built and ready to flash
+        Possible need to sacrifice a USB2.0 cable for USB JTAG/UART\
+        eeprom programmer+dip8 test clip+breakout
+
+
+
+Remote Update Server:
+See: ( "Network Captures"/uninetdump.pcap )
+https request/TLS1.2/8883(?)
+nmap scan:
+    apiuni-tmgc.tyb.jp TCP/8883
+    CNAME a26jky1gs39mej-ats.iot.ap-northeast-1.amazonaws.com
+    A 52.196.228.160
+    A 35.73.76.182
+    A 54.178.45.31
+    A 52.196.151.124
+    A 3.115.144.167
+    A 43.207.254.194
+    A 35.72.59.166
+    A 54.65.66.4
+    A 35.73.234.2
+    A 35.78.56.100
+    A 54.95.78.200
+    A 35.78.127.182
+    A 52.199.19.128
+    A 35.76.34.167
+    A 35.79.59.252
+    A 52.194.44.193
+
+JTAG Docs:
+    See: MIPS with UrJTAG https://sergioprado.blog/2020-02-20-extracting-firmware-from-devices-using-jtag/
+    See: Urjtag quick start quite ( http://urjtag.org/book/_usage.html#_quick_start )
+    See: Urjag JTAG Commands ( http://urjtag.org/book/_jtag_commands.html )
+    See: BusPirate (old) Official Documentation ( http://dangerousprototypes.com/docs/Bus_Pirate )
+    See: BusPirate+JTAG Terminal ( http://dangerousprototypes.com/docs/JTAG )
+    See: BusPirate+OpenOCD ( http://dangerousprototypes.com/docs/Bus_Pirate#JTAG_and_OpenOCD )
+    See: BusPirate+JTAG Hackaday ( https://hackaday.com/2008/12/01/bus-pirate-firmware-update-v0c-jtag-and-more/ )
+    See: BusPirate+OpenOCCD ( http://dangerousprototypes.com/docs/Gonemad%27s_Bus_Pirate/OpenOCD_walk_through )
+    See: BusPirate+OpenOCD ( https://michaldemin.wordpress.com/2010/02/27/how-to-buspirate-and-openocd/ )
+    See: Bus Pirate Self Test (~) ( http://dangerousprototypes.com/docs/Self-test_guide )
+    See" USB_SERIAL_JTAG Controller Block Diagram ( SnipsUSB_SERIAL_JTAG-Block-Diagram.png )
+    See: Update BusPirate Firmware Build ( https://github.com/BusPirate/Bus_Pirate/blob/master/Documentation/building-and-flashing-firmware.md )
+    See: Latest Firmware JTAG Documentation ( https://github.com/BusPirate/Bus_Pirate/blob/master/Documentation/jtag.md )
+    See: BusPirate New Documentation ( https://github.com/BusPirate/Bus_Pirate/tree/master/Documentation )
+    See: Bus Pirate Pin Guide Snip ( Snips/BusPiratePimGuide.png ) AND ( BusPiratePimGuide-LessGood-Sanity-Check.png )
+    USB JTAG: See Page 1207, Section 33 "USB Serial/JTAG Controller) ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+    JTAG Source Control: ( Snips/BusPiratePimGuide.png )
+        See: Page 522 Section 8.5 of ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+        See: ( Snips/JTAG-Source-Control.png )
+            EFUSE Basics:
+            Default to 0, once burned to 1, can not be undone. one time programmable
+            4-Kbit in total in 11 blocks (BLOCK0 ~ BLOCK10) BLOCK1 has 288 bits and each block of BLOCK2 ~ 10 has 352 bits.
+
+                EFUSE_DIS_PAD_JTAG Represents whether pad JTAG is permanently disabled or enabled. 1: Disabled. 0: Enabled. (RO)
+                EFUSE_DIS_USB_JTAG Represents whether USB OTG function that can be switched to JTAG interface is disabled or enabled. 1: Disabled. 0: Enabled. (RO)
+                EFUSE_STRAP_JTAG_SEL Represents whether or not to enable selection between usb_to_jtag and
+                    pad_to_jtag through strapping GPIO3 when both reg_dis_usb_jtag and reg_dis_pad_jtag are equal
+                    to 0. 1: Enabled. 0: Disabled. (RO)
+                15:GPIO3 0 sends data to pins, 1 sends data to USB-JTAG
+                    EFUSE_DIS_PAD_JTAG Defaults 0
+                    EFUSE_DIS_USB_JTAG Defaults 0
+                    EFUSE_STRAP_JTAG_SEL Defaults 0
+                    15:GPIO03 (likely) Defaults 0
+                Programming EFUSE see Page 407, section 5.3.2 of ( "Data Sheets"/esp32-s3_technical_reference_manual_en.pdf )
+        Both USB Port and USB GPIO pins allow both Serial and JTAG because they share the Serial/JTAG Controller
+        JTAG signals come from USB Serial/JTAG Controller by default with default EFUSEs, 15:GPIO3 is ignored in this state (X)
+            Default: 0 0 0 X 
+UART/JTAG Tools
+    Serial
+        Arduino IDE
+    Flashy bois
+        flashrom
+        AVRDude
+        esptool.py
+        idf.py
+    JTAG
+        jtag (urjtag)
+        openocd
+
+USB UART
+See: ( https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/usb-serial-jtag-console.html )
+x USB-C Cable UART
+ESP32-S3 has an internal PHY, which is shared between the USB-OTG and the USB Serial/JTAG hardware.
+Either one of these can use the internal PHY. 
+    13:GPIO19 D- (white)
+    14:GPIO20 D+ (green)
+    GND
+    voltage (3.3/5) not connected :3
+        Use Arduino IDE(?) avrdude(?) esptool(?) flashrom(?) idf.py(?)
+
+USB JTAG: use OpenOCD OR Urjtag with BusPirate
+// Bring to area of camera and reboot
+    13:GPIO19 D- (white)
+    14:GPIO20 D+ (green)
+    GND
+    voltage (3.3/5) not connected :3
+        Use urjatag = jtag
+        maybe try OpenOCD if issues(?)
+    JTAG interface allows fast communication with CPU debug core using a compact representation of JTAG
+    instructions.
+
+
+Jack into UART pads, TX/RX/GND
+x Sewing Needle Technique
+x Pad UART
+x     USB-C on left, from behind battery: BOOT, GND, TX, RX
+x     USB-C on right, from behind battery: RX, TX, GND, BOOT
+x         Use Arduino IDE(?) avrdude(?) esptool(?) flashrom(?) idf.py(?)
+x     L   orange: TX (r2 UART)->RX L
+x         brown: RX (r2 UART)->TX 
+x         gnd: black (common)->GND
+x     R   red: 3v3->BOOT R
+Bare Pin UART:
+See: ( Snips/Periphial-Schematics.png )
+    49 GPIO43 U0TXD O GPIO43 I/O/T CLK_OUT1 O
+    50 GPIO44 U0RXD I1 GPIO44 I/O/T CLK_OUT2 O
+    Voltage not connected
+    Common GND
+        Use Arduino IDE(?) avrdude(?) esptool(?) flashrom(?) idf.py(?)
+
+
+Bare Pin JTAG:
+See: ( Snips/Periphial-Schematics.png ) for pinout to JTAG and UART
+    sudo apt install -y urjtag (jtag) //done
+        JTAG format ISO 11898-1
+        GPIO3 controls the source of JTAG signals during the early boot process
+        #make sure this is  ,the right JTAG to get flash data #find command protocol/tool to dump flash
+    Pin Connections:
+        Format BusPiratePin->JTAGLabel->ESP32-S3-WROOM-1-PinNumber:GPIOPin
+        CS->(M)TMS->34:I041
+        MOSI->(M)TDI->35:IO42
+        MISO->(M)TDO->33:IO40
+        CLOCK->(M)TCK->32:IO39
+
+
+Boot Options:
+    Use BusPirate for pull down on Download Boot on 27: GPIO0
+    Default: SPI Boot
+        Handled by default by built in weak pull-up and pull-down resistors
+            27: GPIO0: 1 (pull up)
+            16: GPIO46: 0 (pull down) 
+    Download Boot // Intended for sending code to the ESP32-S3, check if as reverse ability
+
+           27: GPIO0 0 (Pull down)
+           16: GPIO46: 0 (default, pull down)
+
+flashrom via SPI // on raspberry pi // SPI likely unavailable
+    See ( http://dangerousprototypes.com/forum/index.php?topic=154.msg2755#msg2755 )
+    See ( https://flashrom.org/classic_cli_manpage.html )
+
+Decapping The ESP32-S3-WROOM-1 For Sccess to SPI Flash
+    See: module teardown ( https://electronupdate.blogspot.com/2018/08/espressif-esp32-teardown.html + video at the bottom  ( https://www.youtube.com/watch?v=ZQXpfKDbXKs ) )
+        Video speculates the 8pin flash chip to be a serial eeprom//ofc  just google markings for data sheet xD
+    See: Heat+Suction decapping method ( https://www.vtolabs.com/post/vto-tips-tricks-removing-rf-shields )
+    Decapping methods:
+        Try pry off without any adjustment, might get lucky!
+        Perhaps use heat gun and pry off rf shield (cap)?
+        If heat fails, use pliers carefully?
+        getting desperate: why not use the dremel (very very carefully)=
+    Use SOP8 clamp/hooks on 8 pin flash + eeprom programamer :eyess:
+    From: un-rf-shielded pic ( "Internal Pics"/esp-no-rf-shield-electronupdate-com.JPG )
+     Flash: 25Q32CSIG (Dual/Quad SPI)
+        See Datasheet: ( "Data Sheets"/25Q16_Winbond.pdf )
+    From: instagram de-rf ( "Internal Pics"/Pix-With-ESP32-no-rf-tamagotchi_center-Instagram.jpg )
+        No visible markings on chips
+    DOCUMENT FINDINGS in ( Uni-notes-prose.txt ) / blog / maybe reddit
+
+
+// Pix
+Examine QR code data in detail en masse(maybe script/automate)
+binwalk 1337ness ( see: pix-notes-prose.txt:195
